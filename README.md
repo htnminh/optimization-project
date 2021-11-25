@@ -1,4 +1,4 @@
-# Name
+# Mini-project for course Fundamental of Optimization
 Description
 
 Links to related repos
