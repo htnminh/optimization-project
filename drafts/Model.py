@@ -8,7 +8,7 @@ class Model(cp_model.CpModel):
         self.n_cars = n_cars
         self.n_blocks = n_blocks
         
-        self.x = list()
+        self.x: list(list(self.NewIntVar)) = list()
 
         self._initialize_variables()
         self._initialize_constraints()
@@ -18,11 +18,12 @@ class Model(cp_model.CpModel):
             self.x.append(list())
             
             for b in range(self.n_blocks):
-                self.x[c].append(self.NewIntVar(1, 1, f"x[{c}][{b}]"))
+                self.x[c].append(self.NewIntVar(0, 1, f"x[{c}][{b}]"))
         
     def _initialize_constraints(self):
         for b in range(self.n_blocks):
             linear_expr = cp_model.LinearExpr.Sum(
                                 [self.x[c][b] for c in range(self.n_cars)])
             self.AddLinearConstraint(linear_expr, 1, 1)
-
+        
+        
