@@ -14,13 +14,6 @@ with open('drafts\data.txt', 'r') as f:
     cars = list()
     for _ in range(number_of_cars):
         cars.append(tuple(map(int, f.readline().split()[:2])))
-
-print('Goods, Cars')
-print(number_of_goods, number_of_cars)
-print('Goods')
-print(*goods, sep='\n')
-print('Cars')
-print(*cars, sep='\n')
     
 
 def fitable(good, a, i, j):
@@ -71,9 +64,19 @@ def fit(goods_indices, car_index):
                         a=a,
         )
     except FitSolutionFound:
-        print('Found a solution')
+        # print('Found a solution')
+        pass
 
     return res
 
-print(fit(goods_indices=[0,1,2],
-        car_index=0))
+
+if __name__ == '__main__':
+    print('Goods, Cars')
+    print(number_of_goods, number_of_cars)
+    print('Goods')
+    print(*goods, sep='\n')
+    print('Cars')
+    print(*cars, sep='\n')
+
+    print(fit(goods_indices=[0,1,2],
+            car_index=0))
