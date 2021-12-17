@@ -18,8 +18,11 @@ def input_data(file_path):
 
 if __name__ == '__main__':
     n_rectangles, n_cars, rectangles, cars = input_data("Test_data/2d bin packing.txt")
+    
+    # (weak) upper bound of coordinates
     max_width, max_height = max(cars, key=lambda x: x[0])[0], max(cars, key=lambda x: x[1])[1]
 
+    # creates the model
     model = cp_model.CpModel()
 
     # car[i] = 1 iff it is used
@@ -38,6 +41,7 @@ if __name__ == '__main__':
     bottom = []
 
     for i in range(n_rectangles):
+        # weak upper bound
         left.append(model.NewIntVar(0, max_width, f'left[{i}]'))
         right.append(model.NewIntVar(0, max_width, f'right[{i}]'))
         top.append(model.NewIntVar(0, max_height, f'top[{i}]'))
@@ -74,13 +78,14 @@ if __name__ == '__main__':
             model.Add(t4 == 1).OnlyEnforceIf(b4)
             model.Add(t4 == 0).OnlyEnforceIf(b4.Not())
 
-            # non-overlap
+            # non-overlap: if two rectangles are putted into the same car, one of 4 conditions above must be satisfied
             b0 = model.NewBoolVar('b0')
             model.Add(car_index[i] == car_index[j]).OnlyEnforceIf(b0)
             model.Add(car_index[i] != car_index[j]).OnlyEnforceIf(b0.Not())
             model.Add(t1 + t2 + t3 + t4 >= 1).OnlyEnforceIf(b0)
             model.Add(t1 + t2 + t3 + t4 == 0).OnlyEnforceIf(b0.Not())
 
+    # if car_index[i] = j, i.e. rectangles[i] is putted in cars[j], its width and height must fit this car (tight upper bound)
     for i in range(n_rectangles):
         for j in range(n_cars):
             c = model.NewBoolVar('c')
@@ -90,6 +95,7 @@ if __name__ == '__main__':
             model.Add(top[i] <= cars[j][1]).OnlyEnforceIf(c)
 
     for j in range(n_cars):
+        # is_put_to_car[i] = 0 means that rectangle[i] not in the current car
         is_put_to_car = [model.NewIntVar(0, 1, f'{i}') for i in range(n_rectangles)]
         for i in range(n_rectangles):
             d = model.NewBoolVar('d')
@@ -111,6 +117,7 @@ if __name__ == '__main__':
     solver = cp_model.CpSolver()
     status = solver.Solve(model)
 
+    # print the first solution founded
     if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
         print(f'Min cost: {solver.ObjectiveValue()}')
         for i in range(n_rectangles):
