@@ -98,13 +98,13 @@ def rd_put(rects) -> np.array:
     randomly put each rectangle next to each other, as described
     '''
     car_array = np.full((25, 25), fill_value=-1, dtype=int)
-    avalable_places = [(0, 0)]
+    available_places = [(0, 0)]
 
     for rect_index, rect in enumerate(rects):
         while True:
             # pick a random place to put
-            rd.shuffle(avalable_places)
-            place = avalable_places.pop(0)
+            rd.shuffle(available_places)
+            place = available_places.pop(0)
 
             x_start, y_start = place
             x_end, y_end = x_start + rect[0], y_start + rect[1]
@@ -119,7 +119,7 @@ def rd_put(rects) -> np.array:
         for x in range(x_start, x_end):
             for y in range(y_start, y_end):
                 try:
-                    avalable_places.remove((x, y))
+                    available_places.remove((x, y))
                 except ValueError:
                     pass
 
@@ -127,7 +127,7 @@ def rd_put(rects) -> np.array:
         new_avalable_places = [(x_end, y) for y in range(y_start, y_end)]
         new_avalable_places += [(x, y_end) for x in range(x_start, x_end)]
 
-        avalable_places += new_avalable_places
+        available_places += new_avalable_places
 
     return car_array
 
