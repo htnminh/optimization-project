@@ -66,6 +66,25 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+def plot_full_car_and_cut_car(car_array, removed_array, shape):
+    plt.plot([0, shape[1], shape[1]], [shape[0], shape[0], 0], 'red')
+    plt.imshow(car_array, cmap='turbo', extent=(0,25,25,0), vmin=-1, vmax=5)
+    plt.savefig(f'files/generated_figures/A')
+    plt.clf()
+
+    plt.imshow(removed_array, cmap='turbo', extent=(0,shape[1],shape[0],0), vmin=-1, vmax=5)
+    plt.savefig(f'files/generated_figures/B')
+    plt.clf()
+
+
+def plot_building_solution(car_array, available_places):
+    plt.imshow(car_array, cmap='turbo', extent=(0,25,25,0), vmin=-1, vmax=5)
+    for place in available_places:
+        plt.text(place[1]+0.5, place[0], 'x', ha='center', va='top', c='white')
+    plt.savefig(f'files/generated_figures/{len(available_places)}')
+    plt.clf()
+
+
 def rd_a_rect() -> tuple[int, int]:
     '''random a rectangle, return size'''
     return rd.randrange(1, 6), rd.randrange(1, 6)
@@ -132,11 +151,7 @@ def rd_put(rects, save_figures=False) -> np.array:
 
         # plot if save_figures
         if save_figures:
-            plt.imshow(car_array, cmap='turbo', extent=(0,25,25,0), vmin=-1, vmax=5)
-            for place in available_places:
-                plt.text(place[1]+0.5, place[0], 'x', ha='center', va='top', c='white')
-            plt.savefig(f'files/generated_figures/{len(available_places)}')
-            plt.clf()
+            plot_building_solution(car_array, available_places)
 
     return car_array
 
@@ -178,6 +193,9 @@ def rd_car_size():
     return rd.randrange(1, 26), rd.randrange(1, 26)
 
 
+
+
+
 if __name__ == '__main__':
     np.set_printoptions(threshold=sys.maxsize, linewidth=sys.maxsize)
     plt.xticks(list(range(0, 26, 2)))
@@ -216,14 +234,7 @@ if __name__ == '__main__':
             cars.append(shape)
 
             if index_difficulty == 7 and len(cars) == 3:
-                plt.plot([0, shape[1], shape[1]], [shape[0], shape[0], 0], 'red')
-                plt.imshow(car_array, cmap='turbo', extent=(0,25,25,0), vmin=-1, vmax=5)
-                plt.savefig(f'files/generated_figures/{index_difficulty}_{len(cars)}_a')
-                plt.clf()
-
-                plt.imshow(remove_redundant(car_array, shape), cmap='turbo', extent=(0,shape[1],shape[0],0), vmin=-1, vmax=5)
-                plt.savefig(f'files/generated_figures/{index_difficulty}_{len(cars)}_b')
-                plt.clf()
+                plot_full_car_and_cut_car(car_array, remove_redundant(car_array, shape), shape)
 
         cars += [rd_car_size() for _ in range(ceil(len(cars)/5))]
 
