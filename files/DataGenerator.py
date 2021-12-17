@@ -198,8 +198,6 @@ def rd_car_size():
 
 if __name__ == '__main__':
     np.set_printoptions(threshold=sys.maxsize, linewidth=sys.maxsize)
-    plt.xticks(list(range(0, 26, 2)))
-    plt.yticks(list(range(0, 26, 2)))
 
     # numbers of rectangles based on difficulty (index)
     rect_counts = [i for i in range(6, 11)] + \
