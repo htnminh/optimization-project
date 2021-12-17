@@ -60,9 +60,10 @@ Randomizing algorithm:
 from math import ceil
 import random as rd
 from copy import deepcopy
-import numpy as np
 import sys
 
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 def rd_a_rect() -> tuple[int, int]:
@@ -93,7 +94,7 @@ def rd_pick_some_rects(rects) -> tuple[list, list]:
     return reduced_rects, picked_rects
 
 
-def rd_put(rects) -> np.array:
+def rd_put(rects, save_figures=False) -> np.array:
     '''
     randomly put each rectangle next to each other, as described
     '''
@@ -129,6 +130,14 @@ def rd_put(rects) -> np.array:
 
         available_places += new_avalable_places
 
+        # plot if save_figures
+        if save_figures:
+            plt.imshow(car_array, cmap='turbo', extent=(0,25,25,0), vmin=-1, vmax=5)
+            for place in available_places:
+                plt.text(place[1]+0.5, place[0], 'x', ha='center', va='top', c='white')
+            plt.savefig(f'files/generated_figures/{len(available_places)}')
+            plt.clf()
+
     return car_array
 
 
@@ -155,6 +164,10 @@ def shape_after_remove_redundant(car_array: np.array) -> tuple:
     return tuple(array_size)
     
 
+def remove_redundant(car_array: np.array, shape: tuple):
+    return car_array[:shape[0], :shape[1]]
+
+
 def rd_car_cost():
     '''from 100 to 1000, step is 50'''
     return rd.randrange(100, 1001, 50)
@@ -164,8 +177,11 @@ def rd_car_size():
     '''from 1 to 25 each side, used only after fitting previous cars'''
     return rd.randrange(1, 26), rd.randrange(1, 26)
 
+
 if __name__ == '__main__':
     np.set_printoptions(threshold=sys.maxsize, linewidth=sys.maxsize)
+    plt.xticks(list(range(0, 26, 2)))
+    plt.yticks(list(range(0, 26, 2)))
 
     # numbers of rectangles based on difficulty (index)
     rect_counts = [i for i in range(6, 11)] + \
@@ -187,15 +203,27 @@ if __name__ == '__main__':
         # create rects randomly
         rects = rd_some_rects(rect_count)
 
-        # create cars
+        # create cars with rects
         copy_rects = deepcopy(rects)  # save to recover later
         cars = list()  # list of tuples of size, cost not included
 
         while rects:
+            # save figures of: 3RD CAR OF DIFFICULTY 7
             rects, picked_rects = rd_pick_some_rects(rects)
-            car_array = rd_put(picked_rects)
+            car_array = rd_put(picked_rects,
+                               save_figures=index_difficulty==7 and len(cars)==2)
             shape = shape_after_remove_redundant(car_array)
             cars.append(shape)
+
+            if index_difficulty == 7 and len(cars) == 3:
+                plt.plot([0, shape[1], shape[1]], [shape[0], shape[0], 0], 'red')
+                plt.imshow(car_array, cmap='turbo', extent=(0,25,25,0), vmin=-1, vmax=5)
+                plt.savefig(f'files/generated_figures/{index_difficulty}_{len(cars)}_a')
+                plt.clf()
+
+                plt.imshow(remove_redundant(car_array, shape), cmap='turbo', extent=(0,shape[1],shape[0],0), vmin=-1, vmax=5)
+                plt.savefig(f'files/generated_figures/{index_difficulty}_{len(cars)}_b')
+                plt.clf()
 
         cars += [rd_car_size() for _ in range(ceil(len(cars)/5))]
 
