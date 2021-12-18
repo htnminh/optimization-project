@@ -1,33 +1,29 @@
 '''
-Generate 20 different input files with number of rectangles of:
+Generate 74 different input files with number of rectangles of:
 
-    easy +1 each
-        0: 6
-        1: 7
-        2: 8
-        3: 9
-        4: 10
+    10 easy
+        5, 6, 7,.., 14
+         
+    10 medium
+        15, 11, 12,.., 24
 
-    medium +10 each
-        5: 20
-        6: 30
-        7: 40
-        8: 50
-        9: 60
+    10 hard
+        25, 21, 22,.., 34
 
-    hard +40 each
-        10: 100
-        11: 140
-        12: 180
-        14: 220
-        15: 260
-
-    severe +150 each (except the 16th one is +140)
-        16: 400
-        17: 550
-        18: 700
-        19: 850
-        20: 1000
+    10 severe
+        35, 36, 37,.., 44
+    
+    10 might be impossible without heuristics
+        45, 46, 47,.., 54
+    
+    10 test the limit of heuristics
+        60, 90, 120,.., 330
+    
+    10 might be impossible
+        350, 400, 450,.., 800
+    
+    4 impossible
+        850, 900, 950, 1000
 
 Randomizing algorithm:
 
@@ -200,10 +196,9 @@ if __name__ == '__main__':
     np.set_printoptions(threshold=sys.maxsize, linewidth=sys.maxsize)
 
     # numbers of rectangles based on difficulty (index)
-    rect_counts = [i for i in range(6, 11)] + \
-                  [i for i in range(20, 61, 10)] + \
-                  [i for i in range(100, 261, 40)] + \
-                  [i for i in range(400, 1001, 150)]
+    rect_counts = [i for i in range(5, 55)] + \
+                  [i for i in range(60, 331, 30)] + \
+                  [i for i in range(350, 1001, 50)]
     print('rect_counts:', rect_counts)
     print('len:', len(rect_counts))
     print()
@@ -224,15 +219,15 @@ if __name__ == '__main__':
         cars = list()  # list of tuples of size, cost not included
 
         while rects:
-            # save figures of: BUILD 3RD CAR OF DIFFICULTY 7
+            # save figures of: BUILD 6TH CAR OF DIFFICULTY 25
             rects, picked_rects = rd_pick_some_rects(rects)
             car_array = rd_put(picked_rects,
-                               save_figures=index_difficulty==7 and len(cars)==2)
+                               save_figures=index_difficulty==25 and len(cars)==5)
             shape = shape_after_remove_redundant(car_array)
             cars.append(shape)
 
-            # save figures of: all cars of difficulty 7
-            if index_difficulty == 7:
+            # save figures of: all cars of difficulty 25
+            if index_difficulty == 25:
                 plot_full_car_and_cut_car(car_array, remove_redundant(car_array, shape), shape, len(cars))
 
         cars += [rd_car_size() for _ in range(ceil(len(cars)/5))]
@@ -241,7 +236,7 @@ if __name__ == '__main__':
 
         # write to files
         directory = 'files/generated_data'
-        file_path = f'{directory}/{index_difficulty}.txt'
+        file_path = f'{directory}/{str(rect_count).zfill(4)}.txt'
 
         with open(file_path, 'w') as f:
             f.write(f'{rect_count} {len(cars)}\n')
