@@ -66,14 +66,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plot_full_car_and_cut_car(car_array, removed_array, shape):
+def plot_full_car_and_cut_car(car_array, removed_array, shape, len_cars):
     plt.plot([0, shape[1], shape[1]], [shape[0], shape[0], 0], 'red')
     plt.imshow(car_array, cmap='turbo', extent=(0,25,25,0), vmin=-1, vmax=5)
-    plt.savefig(f'files/generated_figures/A')
+    plt.savefig(f'files/generated_figures/{len_cars}_A')
     plt.clf()
 
     plt.imshow(removed_array, cmap='turbo', extent=(0,shape[1],shape[0],0), vmin=-1, vmax=5)
-    plt.savefig(f'files/generated_figures/B')
+    plt.savefig(f'files/generated_figures/{len_cars}_B')
     plt.clf()
 
 
@@ -224,15 +224,16 @@ if __name__ == '__main__':
         cars = list()  # list of tuples of size, cost not included
 
         while rects:
-            # save figures of: 3RD CAR OF DIFFICULTY 7
+            # save figures of: BUILD 3RD CAR OF DIFFICULTY 7
             rects, picked_rects = rd_pick_some_rects(rects)
             car_array = rd_put(picked_rects,
                                save_figures=index_difficulty==7 and len(cars)==2)
             shape = shape_after_remove_redundant(car_array)
             cars.append(shape)
 
-            if index_difficulty == 7 and len(cars) == 3:
-                plot_full_car_and_cut_car(car_array, remove_redundant(car_array, shape), shape)
+            # save figures of: all cars of difficulty 7
+            if index_difficulty == 7:
+                plot_full_car_and_cut_car(car_array, remove_redundant(car_array, shape), shape, len(cars))
 
         cars += [rd_car_size() for _ in range(ceil(len(cars)/5))]
 
