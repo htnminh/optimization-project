@@ -1,11 +1,9 @@
-from ortools.sat.python import cp_model
+from ortools.linear_solver.pywraplp import Solver
 
 
-class RectFit(cp_model.CpModel):
-    def __init__(self):
-        super().__init__()
-
-        self.solver = cp_model.CpSolver()
+class RectFitMIP:
+    def __init__(self) -> None:
+        self.solver = Solver.CreateSolver("SCIP")
 
     def fit(self, W: int, H: int, rect_sizes: list[tuple[int, int]]) -> bool:
         """
@@ -24,14 +22,14 @@ class RectFit(cp_model.CpModel):
         """
         self.__set_up(W, H, rect_sizes)
         return self.__solve()
-
+    
     def __set_up(self, W: int, H: int, rect_sizes: list[tuple[int, int]]):
         N = len(rect_sizes)
-        self.ClearAssumptions()
+        Solver.Clear(self.solver)
         
         self.is_rotate = list()
         for i in range(N):
-            self.is_rotate.append(self.NewIntVar(0, 1, f"R[{i}]"))
+            self.is_rotate.append(Solver.IntVar(self.solver, 0, 1, f"R[{i}]"))
         
         # coordinates
         self.left = list()
@@ -39,18 +37,18 @@ class RectFit(cp_model.CpModel):
         self.top = list()
         self.bottom = list()
         for i, (w, h) in enumerate(rect_sizes):
-            self.left.append(self.NewIntVar(0, W, f"left[{i}]"))
-            self.right.append(self.NewIntVar(0, W, f"right[{i}]"))
+            self.left.append(Solver.IntVar(self.solver, 0, W, f"left[{i}]"))
+            self.right.append(Solver.IntVar(self.solver, 0, W, f"right[{i}]"))
 
-            self.Add(self.right[i] == self.left[i] + w).OnlyEnforceIf(self.is_rotate[i].Not())
-            self.Add(self.right[i] == self.left[i] + h).OnlyEnforceIf(self.is_rotate[i])
+            Solver.Add(self.solver, self.right[i] == self.left[i] + w * (1 - self.is_rotate[i]) + h * self.is_rotate[i])
 
-            self.top.append(self.NewIntVar(0, H, f"top[{i}]"))
-            self.bottom.append(self.NewIntVar(0, H, f"bottom[{i}]"))
+            self.top.append(Solver.IntVar(self.solver, 0, H, f"top[{i}]"))
+            self.bottom.append(Solver.IntVar(self.solver, 0, H, f"bottom[{i}]"))
 
-            self.Add(self.bottom[i] == self.top[i] + h).OnlyEnforceIf(self.is_rotate[i].Not())
-            self.Add(self.bottom[i] == self.top[i] + w).OnlyEnforceIf(self.is_rotate[i])
-
+            Solver.Add(self.solver, self.bottom[i] == self.top[i] + h * (1 - self.is_rotate[i]) + w * self.is_rotate[i])
+        
+        M = 10000000
+        
         # constraint of not overlaping
         for i in range(N - 1):
             for j in range(i + 1, N):
@@ -64,14 +62,14 @@ class RectFit(cp_model.CpModel):
 
                 t = list()
                 for k, (y, z) in enumerate(constraints):
-                    t.append(self.NewIntVar(0, 1, f"t[{i}][{j}][{k}]"))
-                    self.Add(y <= z).OnlyEnforceIf(t[k])
+                    t.append(Solver.IntVar(self.solver, 0, 1, f't[{i}][{j}][{k}]'))
+                    Solver.Add(self.solver, y <= M * (1 - t[-1]) + z)
 
-                self.Add(sum(t) >= 1)
-    
+                Solver.Add(self.solver, sum(t) >= 1)
+
     def __solve(self) -> bool:
-        status = self.solver.Solve(self)
-        if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
+        status = Solver.Solve(self.solver)
+        if status == Solver.OPTIMAL or status == Solver.FEASIBLE:
             self.__print_solution()
             return True
         
@@ -81,14 +79,14 @@ class RectFit(cp_model.CpModel):
         N = len(self.is_rotate)
         for i in range(N):
             print(
-                self.solver.Value(self.left[i]), 
-                self.solver.Value(self.top[i]),
+                self.left[i].solution_value(),
+                self.top[i].solution_value(),
                 "->",  
-                self.solver.Value(self.right[i]),  
-                self.solver.Value(self.bottom[i]),  
+                self.right[i].solution_value(),  
+                self.bottom[i].solution_value(), 
                 "::",
-                self.solver.Value(self.is_rotate[i])
+                self.is_rotate[i].solution_value(),
             )
 
-rf = RectFit()
+rf = RectFitMIP()
 print(rf.fit(3, 5, [(2, 2), (5, 1), (3, 2)]))
