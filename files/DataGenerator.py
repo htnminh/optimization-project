@@ -55,7 +55,7 @@ Randomizing algorithm:
 
 from math import ceil
 import random as rd
-from copy import deepcopy
+from copy import Error, deepcopy
 import sys
 
 import numpy as np
@@ -193,6 +193,9 @@ def rd_car_size():
 
 
 if __name__ == '__main__':
+    if input('Type Y to generate: ') not in ['y', 'Y']:
+        raise Error('Type Y to generate')
+
     np.set_printoptions(threshold=sys.maxsize, linewidth=sys.maxsize)
 
     # numbers of rectangles based on difficulty (index)
