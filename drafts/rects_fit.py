@@ -12,15 +12,15 @@ class RectFit(cp_model.CpModel):
         Parameters
         ----------
             W: int
-                width of rect
+                width of car
             H: int
-                height of rect
+                height of car
             rect_sizes: list[tuple[int, int]]
                 list of rectangle size, where size[0] is width and size[1] is height
 
         Returns
         -------
-            return True if input rectangles can fit the rectangle (W, H)
+            return True if input rectangles can fit the car (W, H)
         """
         self.__set_up(W, H, rect_sizes)
         return self.__solve()
