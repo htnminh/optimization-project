@@ -137,7 +137,7 @@ def total_cost(cars, used_cars):
 if __name__ == '__main__':
 
     # -------------------------------- READ INPUT --------------------------------
-    rect_count, car_count, rects, cars = read_input('files/generated_data/0150.txt')
+    rect_count, car_count, rects, cars = read_input('files/generated_data/0030.txt')
     print(rect_count)
     print(rects)
     print(car_count)
@@ -157,6 +157,7 @@ if __name__ == '__main__':
     # -------------------------------- INITIALIZE --------------------------------
     areas_left = [area(car) for car in cars]
     rects_contained = [list() for _ in range(len(cars))]
+    time_exceeded_count = 0
     
     # -------------------------------- RUN BEST-FIT HEURISTIC --------------------------------
     while rects:
@@ -185,6 +186,7 @@ if __name__ == '__main__':
                     rects_contained[index].append(rect)
                     break
             except TimeExceededError:
+                time_exceeded_count += 1
                 print(f'#{index} Iteration, #{len(rects)+1} rect: The iteration exceeded {GLOBAL_TIME_LIMIT} second(s) limit, skipped a potential better solution')
                 continue
 
@@ -194,9 +196,9 @@ if __name__ == '__main__':
     print(rects_contained)
 
     used_cars_var = used_cars(rects_contained)
-    print('NUMBER OF CARS USED:')
-    print(len(used_cars_var))
+    print(f'NUMBER OF CARS USED: {len(used_cars_var)}')
     
-    print('COST:')
-    print(total_cost(cars, used_cars_var))
+    print(f'COST: {total_cost(cars, used_cars_var)}')
+
+    print(f'Number of iteration(s) skipped: {time_exceeded_count}')
     
