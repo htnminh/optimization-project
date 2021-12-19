@@ -18,7 +18,7 @@ def input_data(file_path):
 
 
 if __name__ == "__main__":
-    n_rectangles, n_cars, rectangles, cars = input_data("in.txt")
+    n_rectangles, n_cars, rectangles, cars = input_data(r"files\generated_data\0020.txt")
     max_width, max_height = (
         max(cars, key=lambda x: x[0])[0],
         max(cars, key=lambda x: x[1])[1],
@@ -152,6 +152,8 @@ if __name__ == "__main__":
     # Objective
     cost = sum(is_use_car[j] * cars[j][2] for j in range(n_cars))
     Solver.Minimize(solver, cost)
+
+    # solver.set_time_limit(10000)
 
     # Creates solver and solve the model
     status = Solver.Solve(solver)
