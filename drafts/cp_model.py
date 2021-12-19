@@ -16,9 +16,11 @@ def input_data(file_path):
 
     return n_rectangles, n_cars, rectangles, cars
 
+
 if __name__ == '__main__':
-    n_rectangles, n_cars, rectangles, cars = input_data("Test_data/2d bin packing.txt")
-    
+    file_path = 'files/generated_data/0013.txt'
+    n_rectangles, n_cars, rectangles, cars = input_data(file_path)
+
     # (weak) upper bound of coordinates
     max_width, max_height = max(cars, key=lambda x: x[0])[0], max(cars, key=lambda x: x[1])[1]
 
@@ -115,10 +117,13 @@ if __name__ == '__main__':
 
     # Creates solver and solve the model
     solver = cp_model.CpSolver()
+    # time limit
+    solver.parameters.max_time_in_seconds = 1800
     status = solver.Solve(model)
 
     # print the first solution founded
     if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
         print(f'Min cost: {solver.ObjectiveValue()}')
         for i in range(n_rectangles):
-            print(f'put rectangle{i + 1} in car{solver.Value(car_index[i]) + 1} with rotate: {solver.Value(rotate[i])}, at left: {solver.Value(left[i])} and bottom: {solver.Value(bottom[i])}')
+            print(
+                f'put rectangle{i + 1} in car{solver.Value(car_index[i]) + 1} with rotate: {solver.Value(rotate[i])}, at left: {solver.Value(left[i])} and bottom: {solver.Value(bottom[i])}')
