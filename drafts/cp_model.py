@@ -118,7 +118,7 @@ if __name__ == '__main__':
     # Creates solver and solve the model
     solver = cp_model.CpSolver()
     # time limit
-    solver.parameters.max_time_in_seconds = 600
+    solver.parameters.max_time_in_seconds = 1800
     status = solver.Solve(model)
 
     # print the first solution founded
