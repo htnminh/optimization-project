@@ -61,7 +61,7 @@ def insert_remove(rect, a, i, j, not_rotate, value=1):
 
 
 def fit(rects_to_fit, car_to_fit):
-    global GLOBAL_time_start, GLOBAL_time_end
+    global GLOBAL_iter_time_start, GLOBAL_iter_time_end
 
     def fit_size(rects_left:list, car:tuple, a:list):
         nonlocal res
@@ -75,7 +75,7 @@ def fit(rects_to_fit, car_to_fit):
                 for i in range(car[0]):
                     for j in range(car[1]):
                         GLOBAL_time_end = time.time()
-                        if GLOBAL_time_end - GLOBAL_time_start > GLOBAL_TIME_LIMIT:
+                        if GLOBAL_time_end - GLOBAL_iter_time_start > GLOBAL_TIME_LIMIT_PER_ITER:
                             raise TimeExceededError
 
                         fitable_var = fitable(rect, a, i, j)
@@ -137,12 +137,15 @@ def total_cost(cars, used_cars):
 if __name__ == '__main__':
 
     # -------------------------------- READ INPUT --------------------------------
-    rect_count, car_count, rects, cars = read_input('files/generated_data/0030.txt')
+    rect_count, car_count, rects, cars = read_input('files/generated_data/0090.txt')
     print(rect_count)
     print(rects)
     print(car_count)
     print(cars)
     print()
+
+    # -------------------------------- START TIMER --------------------------------
+    GLOBAL_time_start = time.time()
 
     # -------------------------------- SORT --------------------------------
     # rects: area descending order
@@ -173,12 +176,13 @@ if __name__ == '__main__':
             if area_left < area_rect:
                 continue
             
-            # GLOBAL_TIME_LIMIT should be >= 0.01, or the algorithm might be so bad, 
-            # or worst, running infinitely. 
+            # GLOBAL_TIME_LIMIT_PER_ITER should be >= 0.01,
+            # else the algorithm might be so bad, 
+            # or worst, running infinitely long. 
             # A good time limit should be between 0.1 and 10 seconds.
-            GLOBAL_TIME_LIMIT = 0.1
-            GLOBAL_time_start = time.time()
-            GLOBAL_time_end = time.time()
+            GLOBAL_TIME_LIMIT_PER_ITER = 0.1
+            GLOBAL_iter_time_start = time.time()
+            GLOBAL_iter_time_end = time.time()
 
             try:
                 if fit(rects_contained_in_car+[rect], car):
@@ -187,10 +191,12 @@ if __name__ == '__main__':
                     break
             except TimeExceededError:
                 time_exceeded_count += 1
-                print(f'#{index} Iteration, #{len(rects)+1} rect: The iteration exceeded {GLOBAL_TIME_LIMIT} second(s) limit, skipped a potential better solution')
+                print(f'#{index} Iteration, #{len(rects)+1} rect: The iteration exceeded {GLOBAL_TIME_LIMIT_PER_ITER} second(s) limit, skipped a potential better solution')
                 continue
 
     # -------------------------------- PRINT SOLUTION --------------------------------
+    GLOBAL_time_end = time.time()
+
     print()
     print('THE SOLUTION FOUND:')
     print(rects_contained)
@@ -200,5 +206,7 @@ if __name__ == '__main__':
     
     print(f'COST: {total_cost(cars, used_cars_var)}')
 
-    print(f'Number of iteration(s) skipped: {time_exceeded_count}')
+    print(f'Number of iterations skipped: {time_exceeded_count}')
+    print(f'Total running time in seconds: {GLOBAL_time_end - GLOBAL_time_start}')
+    print('   removing prints possibly result in a lower running time, about 0.1 to 1 second')
     
