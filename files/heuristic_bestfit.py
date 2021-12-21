@@ -269,7 +269,7 @@ if __name__ == '__main__':
     print(f'COST: {total_cost(cars, used_cars_indices_var)}')
 
     print('-------------------- OTHER STATS --------------------')
-    print(f'Time limit per iteration: {GLOBAL_TIME_LIMIT_PER_ITER}')
+    print(f'Time limited per iteration: {GLOBAL_TIME_LIMIT_PER_ITER}')
     print(f'Number of iterations skipped: {time_exceeded_count}')
     print(f'Total running time: {GLOBAL_time_end - GLOBAL_time_start}')
     
