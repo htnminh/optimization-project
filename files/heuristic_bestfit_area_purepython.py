@@ -179,10 +179,10 @@ if __name__ == '__main__':
     # else the algorithm might be so bad, or worst, running infinitely long. 
     # A good time limit should be between 0.1 and 10 seconds.
     GLOBAL_TIME_LIMIT_PER_ITER = 0.1
-    file_path = 'files/generated_data/0010.txt'
+    file_path = 'files/generated_data/0045.txt'
     # removing prints (SILENT = True) 
     # possibly result in a lower running time, about from 0.1 to 1 second
-    SILENT = False
+    SILENT = True
 
     # -------------------------------- READ INPUT --------------------------------
     rect_count, car_count, rects, cars = read_input(file_path)
