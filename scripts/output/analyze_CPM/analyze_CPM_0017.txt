@@ -1,0 +1,17 @@
+rectangle1 car3 1, 8 5
+rectangle2 car3 1, 6 10
+rectangle3 car3 0, 5 15
+rectangle4 car3 0, 5 0
+rectangle5 car3 1, 7 10
+rectangle6 car3 0, 0 10
+rectangle7 car3 1, 2 10
+rectangle8 car2 0, 0 2
+rectangle9 car2 0, 1 0
+rectangle10 car3 0, 4 5
+rectangle11 car2 1, 1 2
+rectangle12 car3 0, 0 0
+rectangle13 car3 0, 0 11
+rectangle14 car3 0, 2 14
+rectangle15 car3 1, 0 5
+rectangle16 car3 0, 7 11
+rectangle17 car3 1, 4 0

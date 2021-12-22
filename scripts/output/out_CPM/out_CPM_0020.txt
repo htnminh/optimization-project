@@ -1,0 +1,22 @@
+Min cost: 400.0
+put rectangle1 in car8 with rotate: 1, at left: 1 and bottom: 2
+put rectangle2 in car8 with rotate: 0, at left: 1 and bottom: 0
+put rectangle3 in car8 with rotate: 1, at left: 4 and bottom: 7
+put rectangle4 in car8 with rotate: 0, at left: 18 and bottom: 10
+put rectangle5 in car8 with rotate: 0, at left: 12 and bottom: 10
+put rectangle6 in car8 with rotate: 1, at left: 20 and bottom: 0
+put rectangle7 in car8 with rotate: 1, at left: 13 and bottom: 5
+put rectangle8 in car8 with rotate: 1, at left: 0 and bottom: 6
+put rectangle9 in car8 with rotate: 0, at left: 8 and bottom: 5
+put rectangle10 in car8 with rotate: 0, at left: 18 and bottom: 5
+put rectangle11 in car8 with rotate: 0, at left: 13 and bottom: 6
+put rectangle12 in car8 with rotate: 1, at left: 0 and bottom: 14
+put rectangle13 in car8 with rotate: 1, at left: 4 and bottom: 2
+put rectangle14 in car8 with rotate: 1, at left: 8 and bottom: 2
+put rectangle15 in car8 with rotate: 0, at left: 5 and bottom: 10
+put rectangle16 in car8 with rotate: 0, at left: 0 and bottom: 5
+put rectangle17 in car8 with rotate: 0, at left: 7 and bottom: 0
+put rectangle18 in car8 with rotate: 0, at left: 8 and bottom: 6
+put rectangle19 in car8 with rotate: 1, at left: 0 and bottom: 0
+put rectangle20 in car8 with rotate: 0, at left: 5 and bottom: 7
+time: 1587.54s

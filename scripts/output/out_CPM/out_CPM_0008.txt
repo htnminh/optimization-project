@@ -1,0 +1,10 @@
+Min cost: 100.0
+put rectangle1 in car4 with rotate: 1, at left: 7 and bottom: 0
+put rectangle2 in car4 with rotate: 0, at left: 0 and bottom: 8
+put rectangle3 in car4 with rotate: 0, at left: 9 and bottom: 6
+put rectangle4 in car4 with rotate: 1, at left: 0 and bottom: 0
+put rectangle5 in car4 with rotate: 0, at left: 0 and bottom: 4
+put rectangle6 in car4 with rotate: 1, at left: 5 and bottom: 3
+put rectangle7 in car4 with rotate: 1, at left: 9 and bottom: 7
+put rectangle8 in car4 with rotate: 1, at left: 7 and bottom: 4
+time: 0.12s

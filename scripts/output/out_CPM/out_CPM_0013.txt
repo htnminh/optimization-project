@@ -12,4 +12,4 @@ put rectangle10 in car4 with rotate: 1, at left: 1 and bottom: 17
 put rectangle11 in car4 with rotate: 1, at left: 1 and bottom: 14
 put rectangle12 in car4 with rotate: 0, at left: 6 and bottom: 17
 put rectangle13 in car4 with rotate: 1, at left: 1 and bottom: 10
-time: 0.19s
+time: 0.24s
