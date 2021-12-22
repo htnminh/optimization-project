@@ -1,4 +1,5 @@
 from ortools.sat.python import cp_model
+import sys
 
 
 def input_data(file_path):
@@ -18,7 +19,11 @@ def input_data(file_path):
 
 
 if __name__ == '__main__':
-    file_path = 'files/generated_data/0013.txt'
+    try:
+        file_path = sys.argv[1]
+    except IndexError:
+        file_path = 'files/generated_data/0013.txt'
+
     n_rectangles, n_cars, rectangles, cars = input_data(file_path)
 
     # (weak) upper bound of coordinates
@@ -118,7 +123,7 @@ if __name__ == '__main__':
     # Creates solver and solve the model
     solver = cp_model.CpSolver()
     # time limit
-    solver.parameters.max_time_in_seconds = 1800
+    solver.parameters.max_time_in_seconds = 600
     status = solver.Solve(model)
 
     # print the first solution founded
