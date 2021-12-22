@@ -173,7 +173,7 @@ if __name__ == '__main__':
     # else the algorithm might be so bad, or worst, running infinitely long. 
     # A good time limit should be between 0.1 and 10 seconds.
     GLOBAL_TIME_LIMIT_PER_ITER = 0.1
-    file_path = 'files/generated_data/0045.txt'
+    file_path = 'files/generated_data/1000.txt'
     # removing prints (SILENT = True) 
     # possibly result in a lower running time, about from 0.1 to 1 second
     SILENT = False
@@ -263,6 +263,6 @@ if __name__ == '__main__':
     print(f'COST: {total_cost(cars, used_cars_indices_var)}')
 
     print('-------------------- OTHER STATS --------------------')
+    print(f'Total running time: {GLOBAL_time_end - GLOBAL_time_start}')
     print(f'Time limited per iteration: {GLOBAL_TIME_LIMIT_PER_ITER}')
     print(f'Number of iterations skipped: {time_exceeded_count}')
-    print(f'Total running time: {GLOBAL_time_end - GLOBAL_time_start}')

@@ -1,6 +1,8 @@
 from copy import deepcopy
 import time
 
+import numpy as np
+
 
 # -------------------------------- FIT --------------------------------
 class FitSolutionFound(Exception):
@@ -18,13 +20,11 @@ def fitable_not_rotated(rect, a, i, j):
     check if the rect fit the car array a at the coordinate (i, j),
     without rotating
     '''
-    for row in range(i, i+rect[0]):
-        for col in range(j, j+rect[1]):
-            try:
-                if a[row][col] == 1:
-                    return False
-            except IndexError:
-                return False
+    try:
+        if (a[i: i+rect[0], j: j+rect[1]] == 1).any():
+            return False
+    except IndexError:
+        return False
     return True
 
 
@@ -33,13 +33,11 @@ def fitable_rotated(rect, a, i, j):
     check if the rect fit the car array a at the coordinate (i, j),
     after rotating
     '''
-    for row in range(i, i+rect[1]):
-        for col in range(j, j+rect[0]):
-            try:
-                if a[row][col] == 1:
-                    return False
-            except IndexError:
-                return False
+    try:
+        if (a[i: i+rect[1], j: j+rect[0]] == 1).any():
+            return False
+    except IndexError:
+        return False
     return True
 
 
@@ -60,7 +58,7 @@ def fitable(rect, a, i, j):
 
 def insert_remove(rect, a, i, j, not_rotate, value=1):
     '''
-    technically return
+    return
         a[i:i+rect[0], j:j+rect[1]] = value if not_rotate == True
         or
         a[i:i+rect[1], j:j+rect[0]] = value if not_rotate == False
@@ -68,13 +66,9 @@ def insert_remove(rect, a, i, j, not_rotate, value=1):
     '''
     a = deepcopy(a)
     if not_rotate:
-        for row in range(i, i+rect[0]):
-            for col in range(j, j+rect[1]):
-                a[row][col] = value
+        a[i: i+rect[0], j: j+rect[1]] = value
     else:
-        for row in range(i, i+rect[1]):
-            for col in range(j, j+rect[0]):
-                a[row][col] = value
+        a[i: i+rect[1], j: j+rect[0]] = value
     return a
 
 
@@ -122,7 +116,7 @@ def fit(rects_to_fit, car_to_fit):
     # init a
     # a is the list of lists of ints (2d int array) to indicate the current state of the car
     # where 0 is not occupied, 1 otherwise
-    a = [[0]*car_to_fit[1] for _ in range(car_to_fit[0])]
+    a = np.zeros((car_to_fit[0], car_to_fit[1]), dtype=int)
 
     # try to fit all rects in the car
     try:
@@ -158,6 +152,11 @@ def area(tup):
     return tup[0] * tup[1]
 
 
+def max_side_length(tup):
+    '''return the greater side length of the rect'''
+    return max(tup[0], tup[1])
+
+
 def fee_per_area(car):
     '''return fee per area of the car'''
     return car[2] / (car[0]*car[1])
@@ -179,10 +178,10 @@ if __name__ == '__main__':
     # else the algorithm might be so bad, or worst, running infinitely long. 
     # A good time limit should be between 0.1 and 10 seconds.
     GLOBAL_TIME_LIMIT_PER_ITER = 0.1
-    file_path = 'files/generated_data/0045.txt'
+    file_path = 'files/generated_data/1000.txt'
     # removing prints (SILENT = True) 
     # possibly result in a lower running time, about from 0.1 to 1 second
-    SILENT = True
+    SILENT = False
 
     # -------------------------------- READ INPUT --------------------------------
     rect_count, car_count, rects, cars = read_input(file_path)
@@ -198,8 +197,8 @@ if __name__ == '__main__':
     GLOBAL_time_start = time.time()
 
     # -------------------------------- SORT --------------------------------
-    # rects: sort them by area in descending order
-    rects.sort(key=area, reverse=True)
+    # rects: sort them by max_side_length in descending order
+    rects.sort(key=max_side_length, reverse=True)
 
     # cars: sort them by fee per area in ascending order
     cars.sort(key=fee_per_area)
