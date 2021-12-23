@@ -181,18 +181,22 @@ if __name__ == '__main__':
 
     rect_counts = [i for i in range(5, 55)] + \
                   [i for i in range(60, 331, 30)] + \
-                  [i for i in range(350, 1001, 50)]
+                  [i for i in range(350, 1001, 50)] + \
+                  ['_sample_data']
     directory = 'files/generated_data'
 
     ana_data = list()
     
     for rect_count in rect_counts:
-        file_path = f'{directory}/{str(rect_count).zfill(4)}.txt'
+        if isinstance(rect_count, int): 
+            file_path = f'{directory}/{str(rect_count).zfill(4)}.txt'
+        else:
+            file_path = f'{directory}/{rect_count}.txt'
 
         # GLOBAL_TIME_LIMIT_PER_ITER should be >= 0.01,
         # else the algorithm might be so bad, or worst, running infinitely long. 
         # A good time limit should be between 0.1 and 10 seconds.
-        GLOBAL_TIME_LIMIT_PER_ITER = 0.1
+        GLOBAL_TIME_LIMIT_PER_ITER = 1
         # file_path = 'files/generated_data/1000.txt'
         # removing prints (SILENT = True) 
         # possibly result in a lower running time, about from 0.1 to 1 second
