@@ -155,6 +155,11 @@ def area(tup):
     return tup[0] * tup[1]
 
 
+def max_side_length(tup):
+    '''return the greater side length of the rect'''
+    return max(tup[0], tup[1])
+
+
 def fee_per_area(car):
     '''return fee per area of the car'''
     return car[2] / (car[0]*car[1])
@@ -187,7 +192,7 @@ if __name__ == '__main__':
         # GLOBAL_TIME_LIMIT_PER_ITER should be >= 0.01,
         # else the algorithm might be so bad, or worst, running infinitely long. 
         # A good time limit should be between 0.1 and 10 seconds.
-        GLOBAL_TIME_LIMIT_PER_ITER = 1
+        GLOBAL_TIME_LIMIT_PER_ITER = 0.1
         # file_path = 'files/generated_data/1000.txt'
         # removing prints (SILENT = True) 
         # possibly result in a lower running time, about from 0.1 to 1 second
@@ -208,7 +213,7 @@ if __name__ == '__main__':
 
         # -------------------------------- SORT --------------------------------
         # rects: sort them by area in descending order
-        rects.sort(key=area, reverse=True)
+        rects.sort(key=max_side_length, reverse=True)
 
         # cars: sort them by fee per area in ascending order
         cars.sort(key=fee_per_area)
@@ -301,6 +306,6 @@ if __name__ == '__main__':
     df.set_index('rect_count', inplace=True)
     print(df)
 
-    df.to_csv(f'files/_analytical_data/_ana_heuristic_bestfit_area_numpy_{str(GLOBAL_TIME_LIMIT_PER_ITER)}.csv')
-    with open(f'files/_analytical_data/_ana_heuristic_bestfit_area_numpy_{str(GLOBAL_TIME_LIMIT_PER_ITER)}.pkl', 'wb') as f:
+    df.to_csv(f'files/_analytical_data/_ana_heuristic_bestfit_maxside_numpy_{str(GLOBAL_TIME_LIMIT_PER_ITER)}.csv')
+    with open(f'files/_analytical_data/_ana_heuristic_bestfit_maxside_numpy_{str(GLOBAL_TIME_LIMIT_PER_ITER)}.pkl', 'wb') as f:
         pkl.dump(df, f)
