@@ -80,7 +80,7 @@ def insert_remove(rect, a, i, j, not_rotate, value=1):
 
 def fit(rects_to_fit, car_to_fit):
     '''check if all rects in rects_to_fit fit the car_to_fit'''  # scuse me wtf? 
-    global ITER_time_start, ITER_time_end
+    global ITER_time_start
 
     def fit_run(rects_left:list, car:tuple, a:list):
         '''run the algo'''
