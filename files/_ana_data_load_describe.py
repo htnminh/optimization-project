@@ -10,7 +10,7 @@ pd.options.display.max_columns = None
 pd.options.display.max_colwidth = None
 pd.options.display.expand_frame_repr = False
 
-plt.style.use('dark_background')
+# plt.style.use('dark_background')
 
 
 # consts
@@ -65,9 +65,14 @@ print('Described data saved to', output_file_path)
 
 # save figures
 df_area_1.hist(column='rect_count', bins=10)
-plt.title('hist')
+plt.title('rect_count or n_rect')
 plt.xticks(list(range(0, 1001, 100)))
-plt.savefig('files/_analytical_figures/hist')
+plt.savefig('files/_analytical_figures/hist_rects')
+
+df_area_1.hist(column='car_count', bins=7)
+plt.title('car_count or n_car')
+plt.xticks(list(range(0, 351, 50)))
+plt.savefig('files/_analytical_figures/hist_cars')
 
 df_area_01.sort_values(by='rect_count', inplace=True)
 df_area_01.plot(x='rect_count', y=['total cost', 'running time', 'time_exceeded_count'], subplots=True)
