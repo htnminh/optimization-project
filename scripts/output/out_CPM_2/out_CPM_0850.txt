@@ -1,0 +1,2 @@
+Command terminated by signal 9
+time: 307.67s

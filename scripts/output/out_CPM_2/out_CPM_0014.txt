@@ -1,0 +1,19 @@
+put rectangle 1 with rotate: 0 in car 2 at left: 0 and bottom: 0
+put rectangle 2 with rotate: 1 in car 4 at left: 6 and bottom: 0
+put rectangle 3 with rotate: 1 in car 2 at left: 0 and bottom: 3
+put rectangle 4 with rotate: 1 in car 4 at left: 1 and bottom: 5
+put rectangle 5 with rotate: 0 in car 4 at left: 9 and bottom: 5
+put rectangle 6 with rotate: 0 in car 2 at left: 0 and bottom: 7
+put rectangle 7 with rotate: 1 in car 4 at left: 0 and bottom: 0
+put rectangle 8 with rotate: 0 in car 2 at left: 4 and bottom: 0
+put rectangle 9 with rotate: 0 in car 2 at left: 5 and bottom: 5
+put rectangle 10 with rotate: 1 in car 4 at left: 4 and bottom: 0
+put rectangle 11 with rotate: 0 in car 4 at left: 9 and bottom: 0
+put rectangle 12 with rotate: 1 in car 2 at left: 5 and bottom: 10
+put rectangle 13 with rotate: 0 in car 4 at left: 4 and bottom: 3
+put rectangle 14 with rotate: 1 in car 2 at left: 8 and bottom: 10
+Min_cost: 1550.0
+time_limit: 300.0
+cars: 5
+rects: 14
+time: 4.69s

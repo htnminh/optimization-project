@@ -1,0 +1,12 @@
+put rectangle 1 with rotate: 0 in car 4 at left: 3 and bottom: 8
+put rectangle 2 with rotate: 0 in car 4 at left: 5 and bottom: 12
+put rectangle 3 with rotate: 1 in car 4 at left: 0 and bottom: 6
+put rectangle 4 with rotate: 0 in car 4 at left: 5 and bottom: 1
+put rectangle 5 with rotate: 0 in car 4 at left: 4 and bottom: 6
+put rectangle 6 with rotate: 0 in car 4 at left: 4 and bottom: 2
+put rectangle 7 with rotate: 1 in car 4 at left: 1 and bottom: 2
+Min_cost: 450.0
+time_limit: 300.0
+cars: 4
+rects: 7
+time: 0.09s
