@@ -123,12 +123,13 @@ if __name__ == '__main__':
     # Creates solver and solve the model
     solver = cp_model.CpSolver()
     # time limit
-    solver.parameters.max_time_in_seconds = 600
+    solver.parameters.max_time_in_seconds = 300
     status = solver.Solve(model)
 
     # print the first solution founded
     if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
-        print(f'Min cost: {solver.ObjectiveValue()}')
         for i in range(n_rectangles):
             print(
-                f'put rectangle{i + 1} in car{solver.Value(car_index[i]) + 1} with rotate: {solver.Value(rotate[i])}, at left: {solver.Value(left[i])} and bottom: {solver.Value(bottom[i])}')
+                f'put rectangle {i + 1} with rotate: {solver.Value(rotate[i])} in car {solver.Value(car_index[i]) + 1} at left: {solver.Value(left[i])} and bottom: {solver.Value(bottom[i])}')
+        print(f'Min_cost: {solver.ObjectiveValue()}\ntime_limit: {solver.parameters.max_time_in_seconds}')
+        print(f'cars: {n_cars}\nrects: {n_rectangles}')
