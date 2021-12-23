@@ -303,7 +303,6 @@ if __name__ == '__main__':
         columns=['rect_count', 'car_count', 'total cost', 'cars used count',
                  'running time', 'GLOBAL_TIME_LIMIT_PER_ITER', 'time_exceeded_count']
     )
-    df.set_index('rect_count', inplace=True)
     print(df)
 
     df.to_csv(f'files/_analytical_data/_ana_heuristic_bestfit_maxside_numpy_{str(GLOBAL_TIME_LIMIT_PER_ITER)}.csv')

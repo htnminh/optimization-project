@@ -187,7 +187,7 @@ if __name__ == '__main__':
         # GLOBAL_TIME_LIMIT_PER_ITER should be >= 0.01,
         # else the algorithm might be so bad, or worst, running infinitely long. 
         # A good time limit should be between 0.1 and 10 seconds.
-        GLOBAL_TIME_LIMIT_PER_ITER = 1
+        GLOBAL_TIME_LIMIT_PER_ITER = 0.1
         # file_path = 'files/generated_data/1000.txt'
         # removing prints (SILENT = True) 
         # possibly result in a lower running time, about from 0.1 to 1 second
@@ -298,7 +298,6 @@ if __name__ == '__main__':
         columns=['rect_count', 'car_count', 'total cost', 'cars used count',
                  'running time', 'GLOBAL_TIME_LIMIT_PER_ITER', 'time_exceeded_count']
     )
-    df.set_index('rect_count', inplace=True)
     print(df)
 
     df.to_csv(f'files/_analytical_data/_ana_heuristic_bestfit_area_numpy_{str(GLOBAL_TIME_LIMIT_PER_ITER)}.csv')
