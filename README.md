@@ -1,4 +1,6 @@
-# Mini-project for course Fundamental of Optimization
+# General 2D Bin Packing Problem
+Mini-project for course Fundamental of Optimization
+<!--
 Description
 
 Links to related repos
@@ -23,3 +25,4 @@ Quick introduction about the chapter
 - [Code of Conduct]()
 - [Contributing]()
 - [Issue templates]()
+-->
