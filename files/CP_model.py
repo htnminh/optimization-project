@@ -118,12 +118,12 @@ class TwoDimensionBinPackingCPModel(cp_model.CpModel):
             self.Add(sum(is_put_to_car) != 0).OnlyEnforceIf(e.Not())
             self.Add(self.is_use_car[j] == 1).OnlyEnforceIf(e.Not())
 
-    def __objective(self):
+    def __objective(self) -> None:
         # Objective function: minimize the total cost
         self.cost = sum(self.is_use_car[j] * self.cars[j][2] for j in range(self.n_cars))
         self.Minimize(self.cost)
 
-    def solve(self):
+    def solve(self) -> None:
         self.__set_variables_and_constraints()
         self.__objective()
         self.status = self.solver.Solve(self)
@@ -133,7 +133,7 @@ class TwoDimensionBinPackingCPModel(cp_model.CpModel):
         else:
             print('NO SOLUTION FOUND.')
 
-    def __print_solution(self):
+    def __print_solution(self) -> None:
         print('-------------------- SOLUTION --------------------')
         print('THE SOLUTION FOUND:')
         for i in range(self.n_rectangles):
