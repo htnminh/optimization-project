@@ -1,2 +1,1 @@
-Command terminated by signal 9
-time: 474.72s
+time: 289.77

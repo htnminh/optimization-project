@@ -4,7 +4,7 @@ cd $PWD
 
 # READ
 mode=$1   # CPM, MIP
-input=$(find scripts/output/analyze_CPM/ -name "*.txt" | sort )
+input=$(find scripts/output/analyze_$mode/ -name "*.txt" | sort )
 
 # OUTPUT
 if ! [ -d "scripts/output/$mode" ]

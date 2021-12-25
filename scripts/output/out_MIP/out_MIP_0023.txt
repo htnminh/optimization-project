@@ -1,0 +1,26 @@
+Min cost: 750.0
+put rectangle 1 with rotation -0.0 in car 7.0 at 10.0 8.0 -> 15.0 13.0
+put rectangle 2 with rotation 1.0 in car 7.0 at 2.0 0.0 -> 5.0 1.0
+put rectangle 3 with rotation 1.0 in car 7.0 at 13.0 2.0 -> 16.0 4.0
+put rectangle 4 with rotation 0.0 in car 7.0 at 17.0 0.0 -> 19.0 3.0
+put rectangle 5 with rotation 1.0 in car 7.0 at 7.0 8.0 -> 10.0 12.0
+put rectangle 6 with rotation 0.0 in car 7.0 at 10.0 13.0 -> 15.0 15.0
+put rectangle 7 with rotation 0.0 in car 7.0 at 12.0 2.0 -> 13.0 7.0
+put rectangle 8 with rotation 0.0 in car 7.0 at 10.0 1.0 -> 12.0 6.0
+put rectangle 9 with rotation 0.0 in car 7.0 at 5.0 7.0 -> 7.0 8.0
+put rectangle 10 with rotation 0.0 in car 7.0 at 7.0 6.0 -> 11.0 8.0
+put rectangle 11 with rotation 0.0 in car 7.0 at 5.0 13.0 -> 10.0 14.0
+put rectangle 12 with rotation -0.0 in car 7.0 at 0.0 12.0 -> 1.0 13.0
+put rectangle 13 with rotation -0.0 in car 7.0 at 0.0 3.0 -> 1.0 4.0
+put rectangle 14 with rotation 1.0 in car 7.0 at 12.0 0.0 -> 17.0 2.0
+put rectangle 15 with rotation 1.0 in car 7.0 at 1.0 13.0 -> 4.0 15.0
+put rectangle 16 with rotation 0.0 in car 7.0 at 15.0 8.0 -> 19.0 11.0
+put rectangle 17 with rotation -0.0 in car 7.0 at 15.0 11.0 -> 19.0 15.0
+put rectangle 18 with rotation 0.0 in car 7.0 at 4.0 13.0 -> 5.0 15.0
+put rectangle 19 with rotation 1.0 in car 7.0 at 0.0 0.0 -> 2.0 1.0
+put rectangle 20 with rotation 1.0 in car 7.0 at 0.0 2.0 -> 2.0 3.0
+put rectangle 21 with rotation -0.0 in car 7.0 at 1.0 4.0 -> 5.0 8.0
+put rectangle 22 with rotation 1.0 in car 7.0 at 5.0 0.0 -> 10.0 3.0
+put rectangle 23 with rotation 0.0 in car 7.0 at 0.0 1.0 -> 5.0 2.0
+car_used: 1
+time: 77.97

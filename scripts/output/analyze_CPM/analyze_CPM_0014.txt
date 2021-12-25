@@ -1,14 +1,6 @@
-rectangle1 car2 0, 0 0
-rectangle2 car4 1, 6 0
-rectangle3 car2 1, 0 3
-rectangle4 car4 1, 1 5
-rectangle5 car4 0, 9 5
-rectangle6 car2 0, 0 7
-rectangle7 car4 1, 0 0
-rectangle8 car2 0, 4 0
-rectangle9 car2 0, 5 5
-rectangle10 car4 1, 4 0
-rectangle11 car4 0, 9 0
-rectangle12 car2 1, 5 10
-rectangle13 car4 0, 4 3
-rectangle14 car2 1, 8 10
+1550.0
+120.0
+5
+14
+1.41
+2

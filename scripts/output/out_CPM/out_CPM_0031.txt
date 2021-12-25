@@ -1,33 +1,36 @@
-Min cost: 550.0
-put rectangle1 in car9 with rotate: 0, at left: 0 and bottom: 20
-put rectangle2 in car9 with rotate: 1, at left: 19 and bottom: 18
-put rectangle3 in car9 with rotate: 1, at left: 0 and bottom: 7
-put rectangle4 in car9 with rotate: 1, at left: 12 and bottom: 22
-put rectangle5 in car9 with rotate: 1, at left: 16 and bottom: 22
-put rectangle6 in car9 with rotate: 1, at left: 7 and bottom: 0
-put rectangle7 in car9 with rotate: 0, at left: 0 and bottom: 0
-put rectangle8 in car9 with rotate: 0, at left: 2 and bottom: 8
-put rectangle9 in car9 with rotate: 1, at left: 5 and bottom: 0
-put rectangle10 in car9 with rotate: 1, at left: 10 and bottom: 18
-put rectangle11 in car9 with rotate: 1, at left: 19 and bottom: 20
-put rectangle12 in car9 with rotate: 1, at left: 4 and bottom: 15
-put rectangle13 in car9 with rotate: 0, at left: 13 and bottom: 0
-put rectangle14 in car9 with rotate: 1, at left: 5 and bottom: 5
-put rectangle15 in car9 with rotate: 1, at left: 17 and bottom: 15
-put rectangle16 in car9 with rotate: 1, at left: 2 and bottom: 1
-put rectangle17 in car9 with rotate: 1, at left: 2 and bottom: 3
-put rectangle18 in car9 with rotate: 0, at left: 5 and bottom: 20
-put rectangle19 in car9 with rotate: 1, at left: 0 and bottom: 11
-put rectangle20 in car9 with rotate: 1, at left: 13 and bottom: 5
-put rectangle21 in car9 with rotate: 0, at left: 14 and bottom: 18
-put rectangle22 in car9 with rotate: 0, at left: 8 and bottom: 20
-put rectangle23 in car9 with rotate: 1, at left: 9 and bottom: 7
-put rectangle24 in car9 with rotate: 1, at left: 3 and bottom: 11
-put rectangle25 in car9 with rotate: 0, at left: 10 and bottom: 7
-put rectangle26 in car9 with rotate: 1, at left: 10 and bottom: 15
-put rectangle27 in car9 with rotate: 1, at left: 13 and bottom: 10
-put rectangle28 in car9 with rotate: 0, at left: 8 and bottom: 11
-put rectangle29 in car9 with rotate: 1, at left: 0 and bottom: 15
-put rectangle30 in car9 with rotate: 0, at left: 7 and bottom: 4
-put rectangle31 in car9 with rotate: 0, at left: 0 and bottom: 5
-time: 23.07s
+put rectangle 1 with rotate: 1 in car 9 at left: 1 and bottom: 9
+put rectangle 2 with rotate: 1 in car 9 at left: 16 and bottom: 4
+put rectangle 3 with rotate: 0 in car 9 at left: 0 and bottom: 0
+put rectangle 4 with rotate: 1 in car 9 at left: 17 and bottom: 7
+put rectangle 5 with rotate: 1 in car 9 at left: 15 and bottom: 15
+put rectangle 6 with rotate: 1 in car 9 at left: 7 and bottom: 4
+put rectangle 7 with rotate: 0 in car 9 at left: 2 and bottom: 20
+put rectangle 8 with rotate: 1 in car 9 at left: 18 and bottom: 0
+put rectangle 9 with rotate: 1 in car 9 at left: 11 and bottom: 0
+put rectangle 10 with rotate: 1 in car 9 at left: 10 and bottom: 17
+put rectangle 11 with rotate: 1 in car 9 at left: 19 and bottom: 15
+put rectangle 12 with rotate: 1 in car 9 at left: 4 and bottom: 4
+put rectangle 13 with rotate: 0 in car 9 at left: 11 and bottom: 7
+put rectangle 14 with rotate: 1 in car 9 at left: 9 and bottom: 5
+put rectangle 15 with rotate: 1 in car 9 at left: 16 and bottom: 12
+put rectangle 16 with rotate: 0 in car 9 at left: 0 and bottom: 5
+put rectangle 17 with rotate: 1 in car 9 at left: 1 and bottom: 5
+put rectangle 18 with rotate: 0 in car 9 at left: 1 and bottom: 13
+put rectangle 19 with rotate: 1 in car 9 at left: 1 and bottom: 0
+put rectangle 20 with rotate: 1 in car 9 at left: 11 and bottom: 12
+put rectangle 21 with rotate: 1 in car 9 at left: 18 and bottom: 15
+put rectangle 22 with rotate: 0 in car 9 at left: 8 and bottom: 0
+put rectangle 23 with rotate: 1 in car 9 at left: 9 and bottom: 7
+put rectangle 24 with rotate: 1 in car 9 at left: 3 and bottom: 15
+put rectangle 25 with rotate: 0 in car 9 at left: 18 and bottom: 8
+put rectangle 26 with rotate: 1 in car 9 at left: 10 and bottom: 7
+put rectangle 27 with rotate: 1 in car 9 at left: 11 and bottom: 19
+put rectangle 28 with rotate: 0 in car 9 at left: 5 and bottom: 19
+put rectangle 29 with rotate: 0 in car 9 at left: 13 and bottom: 0
+put rectangle 30 with rotate: 0 in car 9 at left: 4 and bottom: 12
+put rectangle 31 with rotate: 0 in car 9 at left: 7 and bottom: 5
+Min_cost: 550.0
+time_limit: 120.0
+cars: 10
+rects: 31
+time: 6.16

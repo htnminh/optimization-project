@@ -27,10 +27,10 @@ for i in $x; do
 	touch $analyze;
 	
 	# execute CPM & time it
-	/usr/bin/time -f "time: %Us" -ao $file python3 drafts/cp_model.py $filepath > $file;
+	/usr/bin/time -f "time: %e" -ao $file python3 drafts/cp_model.py $filepath > $file;
 	
 	# run parser
-	bash scripts/script_parse-output.sh CPM $file $analyze 
+	bash scripts/script_parse-output.sh CPM $file $analyze 1
 	if [ $? -eq -1 ]; 
 	then
 		continue;
@@ -38,4 +38,4 @@ for i in $x; do
 done
 
 # run csv converter
-bash $PWD/scripts/script_convert-to-csv.sh CPM
+bash $PWD/script_convert-to-csv.sh CPM

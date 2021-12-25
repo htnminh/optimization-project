@@ -1,36 +1,6 @@
-rectangle1 car8 0, 3 2
-rectangle2 car1 0, 0 2
-rectangle3 car8 1, 1 10
-rectangle4 car12 0, 7 4
-rectangle5 car8 0, 0 6
-rectangle6 car8 0, 1 6
-rectangle7 car8 1, 0 2
-rectangle8 car12 0, 4 0
-rectangle9 car1 0, 1 0
-rectangle10 car8 1, 2 5
-rectangle11 car12 0, 0 4
-rectangle12 car12 1, 14 5
-rectangle13 car1 1, 0 5
-rectangle14 car6 0, 0 0
-rectangle15 car12 1, 0 0
-rectangle16 car6 1, 4 5
-rectangle17 car6 0, 4 1
-rectangle18 car12 1, 13 0
-rectangle19 car8 1, 2 2
-rectangle20 car1 0, 1 1
-rectangle21 car6 1, 0 8
-rectangle22 car12 1, 19 5
-rectangle23 car12 1, 18 0
-rectangle24 car12 0, 3 4
-rectangle25 car6 0, 0 10
-rectangle26 car6 1, 2 8
-rectangle27 car12 0, 2 0
-rectangle28 car8 1, 0 0
-rectangle29 car6 1, 0 5
-rectangle30 car12 0, 14 6
-rectangle31 car12 1, 9 0
-rectangle32 car12 1, 4 2
-rectangle33 car6 0, 5 2
-rectangle34 car12 1, 12 4
-rectangle35 car12 0, 7 0
-rectangle36 car12 1, 12 5
+1200.0
+120.0
+12
+36
+120.71
+4

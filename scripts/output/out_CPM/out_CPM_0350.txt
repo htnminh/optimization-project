@@ -1,352 +1,355 @@
-Min cost: 4900.0
-put rectangle1 in car110 with rotate: 0, at left: 0 and bottom: 3
-put rectangle2 in car56 with rotate: 0, at left: 7 and bottom: 0
-put rectangle3 in car110 with rotate: 1, at left: 12 and bottom: 0
-put rectangle4 in car109 with rotate: 0, at left: 9 and bottom: 0
-put rectangle5 in car103 with rotate: 1, at left: 12 and bottom: 6
-put rectangle6 in car18 with rotate: 1, at left: 0 and bottom: 7
-put rectangle7 in car103 with rotate: 0, at left: 6 and bottom: 1
-put rectangle8 in car109 with rotate: 0, at left: 12 and bottom: 3
-put rectangle9 in car53 with rotate: 1, at left: 0 and bottom: 0
-put rectangle10 in car102 with rotate: 1, at left: 0 and bottom: 17
-put rectangle11 in car56 with rotate: 0, at left: 2 and bottom: 8
-put rectangle12 in car18 with rotate: 0, at left: 1 and bottom: 2
-put rectangle13 in car111 with rotate: 1, at left: 7 and bottom: 2
-put rectangle14 in car102 with rotate: 1, at left: 0 and bottom: 13
-put rectangle15 in car109 with rotate: 0, at left: 20 and bottom: 1
-put rectangle16 in car112 with rotate: 0, at left: 14 and bottom: 12
-put rectangle17 in car8 with rotate: 1, at left: 8 and bottom: 11
-put rectangle18 in car109 with rotate: 0, at left: 7 and bottom: 15
-put rectangle19 in car110 with rotate: 0, at left: 22 and bottom: 7
-put rectangle20 in car56 with rotate: 0, at left: 6 and bottom: 9
-put rectangle21 in car18 with rotate: 1, at left: 4 and bottom: 10
-put rectangle22 in car103 with rotate: 1, at left: 15 and bottom: 16
-put rectangle23 in car52 with rotate: 0, at left: 0 and bottom: 5
-put rectangle24 in car111 with rotate: 0, at left: 1 and bottom: 20
-put rectangle25 in car8 with rotate: 0, at left: 9 and bottom: 0
-put rectangle26 in car109 with rotate: 1, at left: 2 and bottom: 2
-put rectangle27 in car25 with rotate: 1, at left: 0 and bottom: 0
-put rectangle28 in car103 with rotate: 1, at left: 0 and bottom: 9
-put rectangle29 in car25 with rotate: 0, at left: 7 and bottom: 8
-put rectangle30 in car22 with rotate: 1, at left: 6 and bottom: 4
-put rectangle31 in car53 with rotate: 1, at left: 5 and bottom: 6
-put rectangle32 in car8 with rotate: 0, at left: 2 and bottom: 14
-put rectangle33 in car111 with rotate: 1, at left: 7 and bottom: 15
-put rectangle34 in car52 with rotate: 0, at left: 2 and bottom: 10
-put rectangle35 in car22 with rotate: 1, at left: 5 and bottom: 4
-put rectangle36 in car25 with rotate: 1, at left: 3 and bottom: 11
-put rectangle37 in car25 with rotate: 1, at left: 5 and bottom: 8
-put rectangle38 in car102 with rotate: 1, at left: 3 and bottom: 19
-put rectangle39 in car109 with rotate: 0, at left: 17 and bottom: 9
-put rectangle40 in car18 with rotate: 1, at left: 3 and bottom: 10
-put rectangle41 in car112 with rotate: 1, at left: 15 and bottom: 0
-put rectangle42 in car56 with rotate: 0, at left: 11 and bottom: 12
-put rectangle43 in car103 with rotate: 1, at left: 19 and bottom: 14
-put rectangle44 in car56 with rotate: 0, at left: 8 and bottom: 5
-put rectangle45 in car56 with rotate: 0, at left: 6 and bottom: 5
-put rectangle46 in car8 with rotate: 1, at left: 1 and bottom: 6
-put rectangle47 in car25 with rotate: 1, at left: 7 and bottom: 9
-put rectangle48 in car111 with rotate: 1, at left: 0 and bottom: 0
-put rectangle49 in car8 with rotate: 1, at left: 2 and bottom: 5
-put rectangle50 in car112 with rotate: 0, at left: 17 and bottom: 7
-put rectangle51 in car110 with rotate: 1, at left: 2 and bottom: 0
-put rectangle52 in car102 with rotate: 1, at left: 0 and bottom: 19
-put rectangle53 in car52 with rotate: 0, at left: 0 and bottom: 3
-put rectangle54 in car22 with rotate: 0, at left: 5 and bottom: 6
-put rectangle55 in car52 with rotate: 0, at left: 4 and bottom: 0
-put rectangle56 in car56 with rotate: 0, at left: 5 and bottom: 0
-put rectangle57 in car56 with rotate: 1, at left: 7 and bottom: 1
-put rectangle58 in car52 with rotate: 1, at left: 1 and bottom: 4
-put rectangle59 in car112 with rotate: 1, at left: 3 and bottom: 2
-put rectangle60 in car52 with rotate: 1, at left: 5 and bottom: 3
-put rectangle61 in car53 with rotate: 0, at left: 3 and bottom: 7
-put rectangle62 in car52 with rotate: 0, at left: 4 and bottom: 11
-put rectangle63 in car8 with rotate: 0, at left: 9 and bottom: 5
-put rectangle64 in car8 with rotate: 0, at left: 0 and bottom: 5
-put rectangle65 in car103 with rotate: 0, at left: 20 and bottom: 0
-put rectangle66 in car112 with rotate: 1, at left: 6 and bottom: 12
-put rectangle67 in car24 with rotate: 1, at left: 0 and bottom: 0
-put rectangle68 in car112 with rotate: 0, at left: 6 and bottom: 0
-put rectangle69 in car52 with rotate: 0, at left: 5 and bottom: 8
-put rectangle70 in car110 with rotate: 0, at left: 0 and bottom: 13
-put rectangle71 in car112 with rotate: 1, at left: 1 and bottom: 13
-put rectangle72 in car22 with rotate: 1, at left: 5 and bottom: 0
-put rectangle73 in car52 with rotate: 0, at left: 9 and bottom: 0
-put rectangle74 in car70 with rotate: 1, at left: 5 and bottom: 5
-put rectangle75 in car109 with rotate: 0, at left: 10 and bottom: 0
-put rectangle76 in car109 with rotate: 0, at left: 13 and bottom: 0
-put rectangle77 in car112 with rotate: 1, at left: 9 and bottom: 8
-put rectangle78 in car103 with rotate: 1, at left: 10 and bottom: 10
-put rectangle79 in car8 with rotate: 0, at left: 6 and bottom: 12
-put rectangle80 in car102 with rotate: 1, at left: 4 and bottom: 12
-put rectangle81 in car111 with rotate: 0, at left: 2 and bottom: 19
-put rectangle82 in car110 with rotate: 1, at left: 8 and bottom: 1
-put rectangle83 in car22 with rotate: 0, at left: 0 and bottom: 0
-put rectangle84 in car103 with rotate: 1, at left: 6 and bottom: 0
-put rectangle85 in car18 with rotate: 0, at left: 9 and bottom: 5
-put rectangle86 in car22 with rotate: 0, at left: 4 and bottom: 1
-put rectangle87 in car53 with rotate: 0, at left: 2 and bottom: 8
-put rectangle88 in car24 with rotate: 1, at left: 8 and bottom: 7
-put rectangle89 in car112 with rotate: 0, at left: 14 and bottom: 7
-put rectangle90 in car18 with rotate: 1, at left: 2 and bottom: 3
-put rectangle91 in car18 with rotate: 0, at left: 0 and bottom: 3
-put rectangle92 in car24 with rotate: 1, at left: 1 and bottom: 1
-put rectangle93 in car18 with rotate: 1, at left: 5 and bottom: 0
-put rectangle94 in car8 with rotate: 0, at left: 5 and bottom: 0
-put rectangle95 in car25 with rotate: 1, at left: 5 and bottom: 0
-put rectangle96 in car112 with rotate: 0, at left: 7 and bottom: 7
-put rectangle97 in car112 with rotate: 0, at left: 2 and bottom: 2
-put rectangle98 in car103 with rotate: 1, at left: 15 and bottom: 9
-put rectangle99 in car110 with rotate: 0, at left: 16 and bottom: 0
-put rectangle100 in car111 with rotate: 1, at left: 5 and bottom: 10
-put rectangle101 in car110 with rotate: 0, at left: 20 and bottom: 6
-put rectangle102 in car70 with rotate: 0, at left: 0 and bottom: 0
-put rectangle103 in car112 with rotate: 1, at left: 14 and bottom: 13
-put rectangle104 in car8 with rotate: 0, at left: 1 and bottom: 14
-put rectangle105 in car112 with rotate: 0, at left: 8 and bottom: 7
-put rectangle106 in car25 with rotate: 1, at left: 5 and bottom: 4
-put rectangle107 in car109 with rotate: 1, at left: 18 and bottom: 12
-put rectangle108 in car110 with rotate: 1, at left: 10 and bottom: 11
-put rectangle109 in car111 with rotate: 0, at left: 0 and bottom: 9
-put rectangle110 in car24 with rotate: 0, at left: 0 and bottom: 1
-put rectangle111 in car111 with rotate: 0, at left: 17 and bottom: 0
-put rectangle112 in car109 with rotate: 0, at left: 10 and bottom: 12
-put rectangle113 in car110 with rotate: 1, at left: 10 and bottom: 3
-put rectangle114 in car111 with rotate: 0, at left: 0 and bottom: 4
-put rectangle115 in car109 with rotate: 0, at left: 20 and bottom: 0
-put rectangle116 in car8 with rotate: 0, at left: 8 and bottom: 7
-put rectangle117 in car8 with rotate: 0, at left: 0 and bottom: 0
-put rectangle118 in car70 with rotate: 0, at left: 0 and bottom: 5
-put rectangle119 in car25 with rotate: 0, at left: 2 and bottom: 11
-put rectangle120 in car111 with rotate: 1, at left: 3 and bottom: 4
-put rectangle121 in car109 with rotate: 0, at left: 7 and bottom: 3
-put rectangle122 in car109 with rotate: 1, at left: 14 and bottom: 20
-put rectangle123 in car110 with rotate: 0, at left: 12 and bottom: 4
-put rectangle124 in car109 with rotate: 0, at left: 5 and bottom: 2
-put rectangle125 in car25 with rotate: 0, at left: 2 and bottom: 6
-put rectangle126 in car111 with rotate: 0, at left: 12 and bottom: 2
-put rectangle127 in car110 with rotate: 1, at left: 0 and bottom: 6
-put rectangle128 in car109 with rotate: 0, at left: 4 and bottom: 0
-put rectangle129 in car53 with rotate: 1, at left: 8 and bottom: 8
-put rectangle130 in car103 with rotate: 0, at left: 15 and bottom: 5
-put rectangle131 in car53 with rotate: 0, at left: 8 and bottom: 4
-put rectangle132 in car22 with rotate: 1, at left: 8 and bottom: 1
-put rectangle133 in car109 with rotate: 1, at left: 3 and bottom: 18
-put rectangle134 in car109 with rotate: 1, at left: 8 and bottom: 5
-put rectangle135 in car109 with rotate: 0, at left: 5 and bottom: 7
-put rectangle136 in car109 with rotate: 0, at left: 9 and bottom: 20
-put rectangle137 in car25 with rotate: 0, at left: 7 and bottom: 1
-put rectangle138 in car109 with rotate: 0, at left: 0 and bottom: 0
-put rectangle139 in car112 with rotate: 1, at left: 0 and bottom: 2
-put rectangle140 in car24 with rotate: 1, at left: 3 and bottom: 0
-put rectangle141 in car22 with rotate: 1, at left: 6 and bottom: 0
-put rectangle142 in car56 with rotate: 1, at left: 1 and bottom: 9
-put rectangle143 in car111 with rotate: 0, at left: 10 and bottom: 15
-put rectangle144 in car111 with rotate: 0, at left: 4 and bottom: 0
-put rectangle145 in car8 with rotate: 1, at left: 8 and bottom: 10
-put rectangle146 in car111 with rotate: 0, at left: 1 and bottom: 9
-put rectangle147 in car111 with rotate: 0, at left: 10 and bottom: 10
-put rectangle148 in car110 with rotate: 0, at left: 4 and bottom: 5
-put rectangle149 in car110 with rotate: 1, at left: 9 and bottom: 3
-put rectangle150 in car8 with rotate: 1, at left: 5 and bottom: 7
-put rectangle151 in car111 with rotate: 0, at left: 9 and bottom: 0
-put rectangle152 in car110 with rotate: 0, at left: 8 and bottom: 3
-put rectangle153 in car25 with rotate: 0, at left: 4 and bottom: 4
-put rectangle154 in car110 with rotate: 0, at left: 8 and bottom: 0
-put rectangle155 in car8 with rotate: 0, at left: 5 and bottom: 2
-put rectangle156 in car103 with rotate: 0, at left: 8 and bottom: 5
-put rectangle157 in car110 with rotate: 0, at left: 7 and bottom: 3
-put rectangle158 in car8 with rotate: 0, at left: 0 and bottom: 10
-put rectangle159 in car56 with rotate: 0, at left: 0 and bottom: 7
-put rectangle160 in car110 with rotate: 0, at left: 15 and bottom: 5
-put rectangle161 in car112 with rotate: 0, at left: 0 and bottom: 13
-put rectangle162 in car24 with rotate: 1, at left: 9 and bottom: 5
-put rectangle163 in car102 with rotate: 0, at left: 7 and bottom: 4
-put rectangle164 in car102 with rotate: 1, at left: 0 and bottom: 1
-put rectangle165 in car110 with rotate: 1, at left: 10 and bottom: 10
-put rectangle166 in car24 with rotate: 0, at left: 0 and bottom: 7
-put rectangle167 in car8 with rotate: 0, at left: 5 and bottom: 12
-put rectangle168 in car109 with rotate: 1, at left: 19 and bottom: 4
-put rectangle169 in car18 with rotate: 1, at left: 0 and bottom: 9
-put rectangle170 in car8 with rotate: 1, at left: 0 and bottom: 1
-put rectangle171 in car103 with rotate: 0, at left: 8 and bottom: 10
-put rectangle172 in car8 with rotate: 0, at left: 9 and bottom: 3
-put rectangle173 in car103 with rotate: 1, at left: 8 and bottom: 6
-put rectangle174 in car112 with rotate: 0, at left: 0 and bottom: 9
-put rectangle175 in car53 with rotate: 1, at left: 3 and bottom: 8
-put rectangle176 in car111 with rotate: 1, at left: 1 and bottom: 10
-put rectangle177 in car22 with rotate: 1, at left: 2 and bottom: 0
-put rectangle178 in car112 with rotate: 0, at left: 18 and bottom: 9
-put rectangle179 in car52 with rotate: 0, at left: 0 and bottom: 8
-put rectangle180 in car18 with rotate: 0, at left: 3 and bottom: 7
-put rectangle181 in car110 with rotate: 0, at left: 0 and bottom: 1
-put rectangle182 in car25 with rotate: 1, at left: 0 and bottom: 9
-put rectangle183 in car18 with rotate: 0, at left: 6 and bottom: 10
-put rectangle184 in car70 with rotate: 0, at left: 5 and bottom: 3
-put rectangle185 in car102 with rotate: 1, at left: 2 and bottom: 4
-put rectangle186 in car111 with rotate: 0, at left: 14 and bottom: 15
-put rectangle187 in car109 with rotate: 0, at left: 0 and bottom: 15
-put rectangle188 in car103 with rotate: 1, at left: 0 and bottom: 2
-put rectangle189 in car111 with rotate: 1, at left: 7 and bottom: 20
-put rectangle190 in car103 with rotate: 0, at left: 5 and bottom: 14
-put rectangle191 in car103 with rotate: 1, at left: 0 and bottom: 18
-put rectangle192 in car56 with rotate: 1, at left: 13 and bottom: 0
-put rectangle193 in car111 with rotate: 0, at left: 1 and bottom: 11
-put rectangle194 in car103 with rotate: 0, at left: 7 and bottom: 13
-put rectangle195 in car112 with rotate: 0, at left: 10 and bottom: 0
-put rectangle196 in car112 with rotate: 0, at left: 8 and bottom: 8
-put rectangle197 in car18 with rotate: 0, at left: 10 and bottom: 0
-put rectangle198 in car24 with rotate: 0, at left: 10 and bottom: 6
-put rectangle199 in car102 with rotate: 1, at left: 4 and bottom: 14
-put rectangle200 in car56 with rotate: 0, at left: 11 and bottom: 7
-put rectangle201 in car111 with rotate: 1, at left: 5 and bottom: 15
-put rectangle202 in car103 with rotate: 1, at left: 2 and bottom: 19
-put rectangle203 in car56 with rotate: 1, at left: 6 and bottom: 13
-put rectangle204 in car22 with rotate: 0, at left: 10 and bottom: 4
-put rectangle205 in car111 with rotate: 1, at left: 8 and bottom: 6
-put rectangle206 in car111 with rotate: 1, at left: 16 and bottom: 17
-put rectangle207 in car111 with rotate: 1, at left: 4 and bottom: 6
-put rectangle208 in car102 with rotate: 0, at left: 7 and bottom: 18
-put rectangle209 in car111 with rotate: 0, at left: 0 and bottom: 18
-put rectangle210 in car111 with rotate: 0, at left: 14 and bottom: 6
-put rectangle211 in car102 with rotate: 0, at left: 0 and bottom: 0
-put rectangle212 in car25 with rotate: 0, at left: 0 and bottom: 4
-put rectangle213 in car109 with rotate: 1, at left: 4 and bottom: 10
-put rectangle214 in car18 with rotate: 1, at left: 6 and bottom: 8
-put rectangle215 in car56 with rotate: 0, at left: 0 and bottom: 14
-put rectangle216 in car112 with rotate: 1, at left: 15 and bottom: 5
-put rectangle217 in car112 with rotate: 0, at left: 19 and bottom: 14
-put rectangle218 in car112 with rotate: 1, at left: 20 and bottom: 4
-put rectangle219 in car103 with rotate: 1, at left: 10 and bottom: 6
-put rectangle220 in car24 with rotate: 1, at left: 8 and bottom: 0
-put rectangle221 in car102 with rotate: 0, at left: 5 and bottom: 8
-put rectangle222 in car111 with rotate: 1, at left: 11 and bottom: 6
-put rectangle223 in car56 with rotate: 0, at left: 0 and bottom: 2
-put rectangle224 in car112 with rotate: 0, at left: 2 and bottom: 5
-put rectangle225 in car112 with rotate: 1, at left: 11 and bottom: 3
-put rectangle226 in car24 with rotate: 1, at left: 1 and bottom: 5
-put rectangle227 in car112 with rotate: 0, at left: 1 and bottom: 7
-put rectangle228 in car102 with rotate: 0, at left: 0 and bottom: 4
-put rectangle229 in car109 with rotate: 0, at left: 16 and bottom: 4
-put rectangle230 in car112 with rotate: 1, at left: 0 and bottom: 0
-put rectangle231 in car112 with rotate: 1, at left: 6 and bottom: 14
-put rectangle232 in car103 with rotate: 0, at left: 2 and bottom: 0
-put rectangle233 in car53 with rotate: 0, at left: 0 and bottom: 7
-put rectangle234 in car103 with rotate: 0, at left: 0 and bottom: 5
-put rectangle235 in car103 with rotate: 0, at left: 3 and bottom: 10
-put rectangle236 in car56 with rotate: 1, at left: 4 and bottom: 4
-put rectangle237 in car110 with rotate: 1, at left: 7 and bottom: 10
-put rectangle238 in car24 with rotate: 1, at left: 1 and bottom: 8
-put rectangle239 in car24 with rotate: 1, at left: 5 and bottom: 5
-put rectangle240 in car22 with rotate: 1, at left: 0 and bottom: 4
-put rectangle241 in car56 with rotate: 0, at left: 2 and bottom: 0
-put rectangle242 in car53 with rotate: 1, at left: 5 and bottom: 0
-put rectangle243 in car111 with rotate: 1, at left: 17 and bottom: 21
-put rectangle244 in car25 with rotate: 1, at left: 5 and bottom: 2
-put rectangle245 in car111 with rotate: 0, at left: 8 and bottom: 0
-put rectangle246 in car102 with rotate: 1, at left: 3 and bottom: 1
-put rectangle247 in car103 with rotate: 0, at left: 6 and bottom: 6
-put rectangle248 in car56 with rotate: 1, at left: 0 and bottom: 9
-put rectangle249 in car103 with rotate: 1, at left: 17 and bottom: 7
-put rectangle250 in car102 with rotate: 0, at left: 3 and bottom: 0
-put rectangle251 in car112 with rotate: 1, at left: 20 and bottom: 0
-put rectangle252 in car110 with rotate: 1, at left: 6 and bottom: 7
-put rectangle253 in car112 with rotate: 0, at left: 6 and bottom: 5
-put rectangle254 in car70 with rotate: 0, at left: 4 and bottom: 0
-put rectangle255 in car103 with rotate: 1, at left: 1 and bottom: 13
-put rectangle256 in car56 with rotate: 1, at left: 10 and bottom: 5
-put rectangle257 in car53 with rotate: 1, at left: 0 and bottom: 2
-put rectangle258 in car102 with rotate: 0, at left: 0 and bottom: 24
-put rectangle259 in car103 with rotate: 0, at left: 4 and bottom: 5
-put rectangle260 in car53 with rotate: 0, at left: 5 and bottom: 2
-put rectangle261 in car109 with rotate: 0, at left: 4 and bottom: 12
-put rectangle262 in car56 with rotate: 1, at left: 11 and bottom: 0
-put rectangle263 in car103 with rotate: 0, at left: 12 and bottom: 12
-put rectangle264 in car103 with rotate: 1, at left: 11 and bottom: 1
-put rectangle265 in car103 with rotate: 1, at left: 12 and bottom: 1
-put rectangle266 in car103 with rotate: 1, at left: 9 and bottom: 8
-put rectangle267 in car111 with rotate: 0, at left: 4 and bottom: 18
-put rectangle268 in car102 with rotate: 1, at left: 7 and bottom: 8
-put rectangle269 in car109 with rotate: 1, at left: 0 and bottom: 21
-put rectangle270 in car111 with rotate: 1, at left: 0 and bottom: 14
-put rectangle271 in car110 with rotate: 1, at left: 23 and bottom: 5
-put rectangle272 in car103 with rotate: 1, at left: 19 and bottom: 3
-put rectangle273 in car109 with rotate: 0, at left: 0 and bottom: 5
-put rectangle274 in car112 with rotate: 1, at left: 0 and bottom: 11
-put rectangle275 in car112 with rotate: 0, at left: 3 and bottom: 0
-put rectangle276 in car112 with rotate: 0, at left: 2 and bottom: 3
-put rectangle277 in car103 with rotate: 1, at left: 0 and bottom: 0
-put rectangle278 in car110 with rotate: 0, at left: 21 and bottom: 3
-put rectangle279 in car109 with rotate: 0, at left: 2 and bottom: 6
-put rectangle280 in car109 with rotate: 0, at left: 3 and bottom: 15
-put rectangle281 in car103 with rotate: 0, at left: 17 and bottom: 0
-put rectangle282 in car111 with rotate: 0, at left: 2 and bottom: 18
-put rectangle283 in car56 with rotate: 0, at left: 3 and bottom: 10
-put rectangle284 in car18 with rotate: 1, at left: 7 and bottom: 10
-put rectangle285 in car111 with rotate: 0, at left: 11 and bottom: 15
-put rectangle286 in car109 with rotate: 1, at left: 0 and bottom: 10
-put rectangle287 in car18 with rotate: 0, at left: 2 and bottom: 0
-put rectangle288 in car102 with rotate: 1, at left: 2 and bottom: 24
-put rectangle289 in car109 with rotate: 1, at left: 16 and bottom: 0
-put rectangle290 in car109 with rotate: 0, at left: 10 and bottom: 2
-put rectangle291 in car109 with rotate: 0, at left: 5 and bottom: 3
-put rectangle292 in car103 with rotate: 1, at left: 8 and bottom: 0
-put rectangle293 in car112 with rotate: 1, at left: 9 and bottom: 13
-put rectangle294 in car103 with rotate: 0, at left: 12 and bottom: 14
-put rectangle295 in car102 with rotate: 0, at left: 3 and bottom: 3
-put rectangle296 in car111 with rotate: 1, at left: 5 and bottom: 19
-put rectangle297 in car109 with rotate: 0, at left: 4 and bottom: 6
-put rectangle298 in car111 with rotate: 1, at left: 14 and bottom: 10
-put rectangle299 in car109 with rotate: 1, at left: 13 and bottom: 5
-put rectangle300 in car102 with rotate: 1, at left: 7 and bottom: 24
-put rectangle301 in car56 with rotate: 0, at left: 2 and bottom: 10
-put rectangle302 in car103 with rotate: 1, at left: 7 and bottom: 14
-put rectangle303 in car109 with rotate: 0, at left: 12 and bottom: 7
-put rectangle304 in car22 with rotate: 1, at left: 7 and bottom: 0
-put rectangle305 in car111 with rotate: 1, at left: 4 and bottom: 1
-put rectangle306 in car110 with rotate: 1, at left: 8 and bottom: 5
-put rectangle307 in car110 with rotate: 1, at left: 11 and bottom: 7
-put rectangle308 in car109 with rotate: 0, at left: 9 and bottom: 7
-put rectangle309 in car102 with rotate: 1, at left: 0 and bottom: 8
-put rectangle310 in car102 with rotate: 1, at left: 0 and bottom: 3
-put rectangle311 in car103 with rotate: 0, at left: 16 and bottom: 12
-put rectangle312 in car111 with rotate: 1, at left: 16 and bottom: 5
-put rectangle313 in car112 with rotate: 1, at left: 7 and bottom: 2
-put rectangle314 in car56 with rotate: 0, at left: 5 and bottom: 8
-put rectangle315 in car102 with rotate: 0, at left: 4 and bottom: 8
-put rectangle316 in car103 with rotate: 1, at left: 20 and bottom: 10
-put rectangle317 in car103 with rotate: 1, at left: 19 and bottom: 5
-put rectangle318 in car110 with rotate: 0, at left: 18 and bottom: 0
-put rectangle319 in car109 with rotate: 0, at left: 16 and bottom: 9
-put rectangle320 in car110 with rotate: 1, at left: 17 and bottom: 4
-put rectangle321 in car111 with rotate: 1, at left: 13 and bottom: 17
-put rectangle322 in car112 with rotate: 1, at left: 17 and bottom: 9
-put rectangle323 in car109 with rotate: 0, at left: 0 and bottom: 19
-put rectangle324 in car110 with rotate: 1, at left: 12 and bottom: 12
-put rectangle325 in car110 with rotate: 1, at left: 8 and bottom: 12
-put rectangle326 in car110 with rotate: 1, at left: 4 and bottom: 10
-put rectangle327 in car110 with rotate: 0, at left: 24 and bottom: 11
-put rectangle328 in car109 with rotate: 1, at left: 18 and bottom: 19
-put rectangle329 in car103 with rotate: 1, at left: 13 and bottom: 14
-put rectangle330 in car109 with rotate: 0, at left: 17 and bottom: 12
-put rectangle331 in car111 with rotate: 1, at left: 17 and bottom: 17
-put rectangle332 in car110 with rotate: 1, at left: 20 and bottom: 10
-put rectangle333 in car110 with rotate: 0, at left: 1 and bottom: 11
-put rectangle334 in car112 with rotate: 0, at left: 19 and bottom: 9
-put rectangle335 in car110 with rotate: 1, at left: 18 and bottom: 5
-put rectangle336 in car70 with rotate: 0, at left: 0 and bottom: 6
-put rectangle337 in car109 with rotate: 0, at left: 12 and bottom: 15
-put rectangle338 in car112 with rotate: 1, at left: 10 and bottom: 1
-put rectangle339 in car109 with rotate: 0, at left: 17 and bottom: 16
-put rectangle340 in car110 with rotate: 1, at left: 15 and bottom: 10
-put rectangle341 in car111 with rotate: 0, at left: 13 and bottom: 0
-put rectangle342 in car110 with rotate: 1, at left: 20 and bottom: 5
-put rectangle343 in car110 with rotate: 1, at left: 0 and bottom: 0
-put rectangle344 in car56 with rotate: 0, at left: 0 and bottom: 0
-put rectangle345 in car52 with rotate: 0, at left: 0 and bottom: 0
-put rectangle346 in car110 with rotate: 1, at left: 17 and bottom: 10
-put rectangle347 in car110 with rotate: 0, at left: 10 and bottom: 5
-put rectangle348 in car103 with rotate: 1, at left: 0 and bottom: 8
-put rectangle349 in car110 with rotate: 1, at left: 23 and bottom: 1
-put rectangle350 in car110 with rotate: 1, at left: 16 and bottom: 4
-time: 2313.50s
+put rectangle 1 with rotate: 0 in car 8 at left: 0 and bottom: 0
+put rectangle 2 with rotate: 1 in car 122 at left: 1 and bottom: 0
+put rectangle 3 with rotate: 1 in car 110 at left: 8 and bottom: 0
+put rectangle 4 with rotate: 0 in car 14 at left: 0 and bottom: 0
+put rectangle 5 with rotate: 1 in car 56 at left: 12 and bottom: 1
+put rectangle 6 with rotate: 1 in car 31 at left: 5 and bottom: 2
+put rectangle 7 with rotate: 0 in car 110 at left: 20 and bottom: 0
+put rectangle 8 with rotate: 1 in car 30 at left: 6 and bottom: 0
+put rectangle 9 with rotate: 0 in car 35 at left: 5 and bottom: 0
+put rectangle 10 with rotate: 1 in car 25 at left: 1 and bottom: 11
+put rectangle 11 with rotate: 0 in car 29 at left: 0 and bottom: 7
+put rectangle 12 with rotate: 0 in car 35 at left: 4 and bottom: 0
+put rectangle 13 with rotate: 1 in car 25 at left: 1 and bottom: 7
+put rectangle 14 with rotate: 1 in car 30 at left: 0 and bottom: 0
+put rectangle 15 with rotate: 0 in car 30 at left: 6 and bottom: 1
+put rectangle 16 with rotate: 1 in car 29 at left: 7 and bottom: 0
+put rectangle 17 with rotate: 1 in car 29 at left: 0 and bottom: 1
+put rectangle 18 with rotate: 0 in car 109 at left: 7 and bottom: 12
+put rectangle 19 with rotate: 0 in car 111 at left: 0 and bottom: 0
+put rectangle 20 with rotate: 0 in car 56 at left: 4 and bottom: 9
+put rectangle 21 with rotate: 1 in car 30 at left: 4 and bottom: 0
+put rectangle 22 with rotate: 1 in car 34 at left: 4 and bottom: 0
+put rectangle 23 with rotate: 0 in car 14 at left: 0 and bottom: 5
+put rectangle 24 with rotate: 0 in car 34 at left: 1 and bottom: 2
+put rectangle 25 with rotate: 0 in car 20 at left: 3 and bottom: 3
+put rectangle 26 with rotate: 1 in car 30 at left: 5 and bottom: 4
+put rectangle 27 with rotate: 0 in car 25 at left: 6 and bottom: 7
+put rectangle 28 with rotate: 1 in car 29 at left: 3 and bottom: 5
+put rectangle 29 with rotate: 0 in car 56 at left: 0 and bottom: 4
+put rectangle 30 with rotate: 1 in car 29 at left: 3 and bottom: 1
+put rectangle 31 with rotate: 1 in car 28 at left: 0 and bottom: 2
+put rectangle 32 with rotate: 0 in car 26 at left: 4 and bottom: 0
+put rectangle 33 with rotate: 1 in car 111 at left: 7 and bottom: 9
+put rectangle 34 with rotate: 0 in car 26 at left: 2 and bottom: 0
+put rectangle 35 with rotate: 0 in car 26 at left: 0 and bottom: 0
+put rectangle 36 with rotate: 1 in car 26 at left: 4 and bottom: 2
+put rectangle 37 with rotate: 0 in car 26 at left: 4 and bottom: 4
+put rectangle 38 with rotate: 1 in car 66 at left: 7 and bottom: 3
+put rectangle 39 with rotate: 0 in car 109 at left: 17 and bottom: 10
+put rectangle 40 with rotate: 1 in car 56 at left: 1 and bottom: 10
+put rectangle 41 with rotate: 1 in car 110 at left: 12 and bottom: 0
+put rectangle 42 with rotate: 1 in car 56 at left: 0 and bottom: 0
+put rectangle 43 with rotate: 1 in car 103 at left: 18 and bottom: 13
+put rectangle 44 with rotate: 0 in car 25 at left: 0 and bottom: 3
+put rectangle 45 with rotate: 0 in car 56 at left: 4 and bottom: 5
+put rectangle 46 with rotate: 1 in car 25 at left: 0 and bottom: 7
+put rectangle 47 with rotate: 1 in car 25 at left: 2 and bottom: 3
+put rectangle 48 with rotate: 1 in car 16 at left: 0 and bottom: 0
+put rectangle 49 with rotate: 1 in car 15 at left: 2 and bottom: 5
+put rectangle 50 with rotate: 0 in car 111 at left: 3 and bottom: 1
+put rectangle 51 with rotate: 1 in car 110 at left: 0 and bottom: 1
+put rectangle 52 with rotate: 0 in car 18 at left: 3 and bottom: 11
+put rectangle 53 with rotate: 0 in car 56 at left: 11 and bottom: 9
+put rectangle 54 with rotate: 0 in car 15 at left: 4 and bottom: 10
+put rectangle 55 with rotate: 0 in car 14 at left: 4 and bottom: 0
+put rectangle 56 with rotate: 1 in car 15 at left: 5 and bottom: 0
+put rectangle 57 with rotate: 1 in car 56 at left: 7 and bottom: 1
+put rectangle 58 with rotate: 0 in car 15 at left: 2 and bottom: 1
+put rectangle 59 with rotate: 1 in car 14 at left: 0 and bottom: 2
+put rectangle 60 with rotate: 1 in car 56 at left: 3 and bottom: 0
+put rectangle 61 with rotate: 1 in car 15 at left: 8 and bottom: 4
+put rectangle 62 with rotate: 0 in car 56 at left: 3 and bottom: 10
+put rectangle 63 with rotate: 0 in car 15 at left: 0 and bottom: 5
+put rectangle 64 with rotate: 0 in car 15 at left: 5 and bottom: 2
+put rectangle 65 with rotate: 1 in car 56 at left: 7 and bottom: 0
+put rectangle 66 with rotate: 1 in car 15 at left: 6 and bottom: 1
+put rectangle 67 with rotate: 1 in car 15 at left: 2 and bottom: 0
+put rectangle 68 with rotate: 0 in car 15 at left: 0 and bottom: 10
+put rectangle 69 with rotate: 0 in car 15 at left: 5 and bottom: 6
+put rectangle 70 with rotate: 0 in car 15 at left: 4 and bottom: 11
+put rectangle 71 with rotate: 1 in car 1 at left: 4 and bottom: 0
+put rectangle 72 with rotate: 1 in car 15 at left: 4 and bottom: 1
+put rectangle 73 with rotate: 0 in car 21 at left: 4 and bottom: 0
+put rectangle 74 with rotate: 0 in car 15 at left: 6 and bottom: 3
+put rectangle 75 with rotate: 1 in car 12 at left: 0 and bottom: 0
+put rectangle 76 with rotate: 0 in car 21 at left: 1 and bottom: 0
+put rectangle 77 with rotate: 1 in car 4 at left: 5 and bottom: 0
+put rectangle 78 with rotate: 0 in car 15 at left: 0 and bottom: 0
+put rectangle 79 with rotate: 1 in car 22 at left: 5 and bottom: 3
+put rectangle 80 with rotate: 1 in car 18 at left: 1 and bottom: 1
+put rectangle 81 with rotate: 0 in car 18 at left: 5 and bottom: 0
+put rectangle 82 with rotate: 1 in car 18 at left: 0 and bottom: 3
+put rectangle 83 with rotate: 0 in car 18 at left: 0 and bottom: 5
+put rectangle 84 with rotate: 1 in car 110 at left: 4 and bottom: 6
+put rectangle 85 with rotate: 0 in car 18 at left: 8 and bottom: 10
+put rectangle 86 with rotate: 0 in car 20 at left: 2 and bottom: 0
+put rectangle 87 with rotate: 0 in car 18 at left: 8 and bottom: 6
+put rectangle 88 with rotate: 1 in car 18 at left: 2 and bottom: 7
+put rectangle 89 with rotate: 0 in car 12 at left: 2 and bottom: 0
+put rectangle 90 with rotate: 1 in car 18 at left: 2 and bottom: 3
+put rectangle 91 with rotate: 0 in car 18 at left: 1 and bottom: 9
+put rectangle 92 with rotate: 1 in car 20 at left: 0 and bottom: 0
+put rectangle 93 with rotate: 1 in car 18 at left: 5 and bottom: 1
+put rectangle 94 with rotate: 0 in car 22 at left: 6 and bottom: 0
+put rectangle 95 with rotate: 1 in car 11 at left: 0 and bottom: 1
+put rectangle 96 with rotate: 0 in car 7 at left: 1 and bottom: 0
+put rectangle 97 with rotate: 0 in car 116 at left: 0 and bottom: 0
+put rectangle 98 with rotate: 1 in car 1 at left: 9 and bottom: 2
+put rectangle 99 with rotate: 0 in car 3 at left: 5 and bottom: 3
+put rectangle 100 with rotate: 1 in car 120 at left: 5 and bottom: 0
+put rectangle 101 with rotate: 1 in car 4 at left: 0 and bottom: 0
+put rectangle 102 with rotate: 1 in car 4 at left: 0 and bottom: 3
+put rectangle 103 with rotate: 1 in car 22 at left: 0 and bottom: 3
+put rectangle 104 with rotate: 1 in car 6 at left: 0 and bottom: 0
+put rectangle 105 with rotate: 0 in car 1 at left: 11 and bottom: 2
+put rectangle 106 with rotate: 1 in car 23 at left: 0 and bottom: 4
+put rectangle 107 with rotate: 1 in car 109 at left: 0 and bottom: 5
+put rectangle 108 with rotate: 0 in car 1 at left: 9 and bottom: 5
+put rectangle 109 with rotate: 0 in car 1 at left: 7 and bottom: 5
+put rectangle 110 with rotate: 1 in car 109 at left: 0 and bottom: 17
+put rectangle 111 with rotate: 0 in car 109 at left: 14 and bottom: 0
+put rectangle 112 with rotate: 0 in car 68 at left: 3 and bottom: 7
+put rectangle 113 with rotate: 1 in car 3 at left: 0 and bottom: 6
+put rectangle 114 with rotate: 0 in car 1 at left: 0 and bottom: 0
+put rectangle 115 with rotate: 0 in car 1 at left: 11 and bottom: 8
+put rectangle 116 with rotate: 0 in car 1 at left: 8 and bottom: 5
+put rectangle 117 with rotate: 0 in car 3 at left: 0 and bottom: 0
+put rectangle 118 with rotate: 1 in car 109 at left: 8 and bottom: 4
+put rectangle 119 with rotate: 1 in car 5 at left: 1 and bottom: 0
+put rectangle 120 with rotate: 1 in car 1 at left: 3 and bottom: 0
+put rectangle 121 with rotate: 0 in car 109 at left: 0 and bottom: 2
+put rectangle 122 with rotate: 1 in car 109 at left: 18 and bottom: 7
+put rectangle 123 with rotate: 0 in car 1 at left: 12 and bottom: 0
+put rectangle 124 with rotate: 0 in car 109 at left: 9 and bottom: 0
+put rectangle 125 with rotate: 0 in car 3 at left: 2 and bottom: 1
+put rectangle 126 with rotate: 0 in car 3 at left: 5 and bottom: 0
+put rectangle 127 with rotate: 1 in car 110 at left: 20 and bottom: 7
+put rectangle 128 with rotate: 0 in car 109 at left: 4 and bottom: 0
+put rectangle 129 with rotate: 1 in car 17 at left: 0 and bottom: 2
+put rectangle 130 with rotate: 0 in car 109 at left: 4 and bottom: 15
+put rectangle 131 with rotate: 0 in car 17 at left: 2 and bottom: 0
+put rectangle 132 with rotate: 1 in car 3 at left: 7 and bottom: 4
+put rectangle 133 with rotate: 1 in car 109 at left: 4 and bottom: 2
+put rectangle 134 with rotate: 1 in car 109 at left: 8 and bottom: 2
+put rectangle 135 with rotate: 0 in car 109 at left: 4 and bottom: 7
+put rectangle 136 with rotate: 0 in car 109 at left: 9 and bottom: 4
+put rectangle 137 with rotate: 0 in car 109 at left: 9 and bottom: 1
+put rectangle 138 with rotate: 0 in car 3 at left: 6 and bottom: 0
+put rectangle 139 with rotate: 1 in car 3 at left: 0 and bottom: 1
+put rectangle 140 with rotate: 1 in car 24 at left: 5 and bottom: 3
+put rectangle 141 with rotate: 1 in car 6 at left: 4 and bottom: 0
+put rectangle 142 with rotate: 1 in car 9 at left: 3 and bottom: 0
+put rectangle 143 with rotate: 1 in car 1 at left: 9 and bottom: 1
+put rectangle 144 with rotate: 1 in car 110 at left: 4 and bottom: 10
+put rectangle 145 with rotate: 1 in car 8 at left: 0 and bottom: 3
+put rectangle 146 with rotate: 0 in car 1 at left: 4 and bottom: 4
+put rectangle 147 with rotate: 0 in car 111 at left: 10 and bottom: 0
+put rectangle 148 with rotate: 0 in car 1 at left: 4 and bottom: 5
+put rectangle 149 with rotate: 1 in car 6 at left: 0 and bottom: 5
+put rectangle 150 with rotate: 1 in car 8 at left: 5 and bottom: 7
+put rectangle 151 with rotate: 1 in car 6 at left: 5 and bottom: 0
+put rectangle 152 with rotate: 0 in car 70 at left: 4 and bottom: 5
+put rectangle 153 with rotate: 0 in car 8 at left: 4 and bottom: 7
+put rectangle 154 with rotate: 1 in car 1 at left: 10 and bottom: 6
+put rectangle 155 with rotate: 0 in car 8 at left: 5 and bottom: 2
+put rectangle 156 with rotate: 0 in car 110 at left: 8 and bottom: 6
+put rectangle 157 with rotate: 0 in car 70 at left: 0 and bottom: 3
+put rectangle 158 with rotate: 1 in car 8 at left: 0 and bottom: 4
+put rectangle 159 with rotate: 0 in car 6 at left: 5 and bottom: 8
+put rectangle 160 with rotate: 0 in car 1 at left: 1 and bottom: 5
+put rectangle 161 with rotate: 0 in car 1 at left: 6 and bottom: 5
+put rectangle 162 with rotate: 1 in car 1 at left: 9 and bottom: 0
+put rectangle 163 with rotate: 1 in car 6 at left: 0 and bottom: 10
+put rectangle 164 with rotate: 1 in car 6 at left: 2 and bottom: 8
+put rectangle 165 with rotate: 1 in car 110 at left: 8 and bottom: 3
+put rectangle 166 with rotate: 0 in car 110 at left: 7 and bottom: 3
+put rectangle 167 with rotate: 0 in car 8 at left: 4 and bottom: 4
+put rectangle 168 with rotate: 0 in car 105 at left: 18 and bottom: 1
+put rectangle 169 with rotate: 1 in car 9 at left: 0 and bottom: 1
+put rectangle 170 with rotate: 1 in car 6 at left: 2 and bottom: 4
+put rectangle 171 with rotate: 1 in car 13 at left: 1 and bottom: 2
+put rectangle 172 with rotate: 0 in car 7 at left: 5 and bottom: 6
+put rectangle 173 with rotate: 1 in car 10 at left: 3 and bottom: 2
+put rectangle 174 with rotate: 0 in car 122 at left: 2 and bottom: 5
+put rectangle 175 with rotate: 1 in car 10 at left: 3 and bottom: 8
+put rectangle 176 with rotate: 1 in car 14 at left: 1 and bottom: 9
+put rectangle 177 with rotate: 1 in car 10 at left: 1 and bottom: 0
+put rectangle 178 with rotate: 0 in car 10 at left: 1 and bottom: 8
+put rectangle 179 with rotate: 0 in car 10 at left: 3 and bottom: 0
+put rectangle 180 with rotate: 0 in car 7 at left: 4 and bottom: 1
+put rectangle 181 with rotate: 0 in car 17 at left: 0 and bottom: 0
+put rectangle 182 with rotate: 1 in car 10 at left: 0 and bottom: 4
+put rectangle 183 with rotate: 0 in car 10 at left: 2 and bottom: 8
+put rectangle 184 with rotate: 1 in car 10 at left: 7 and bottom: 3
+put rectangle 185 with rotate: 1 in car 10 at left: 2 and bottom: 4
+put rectangle 186 with rotate: 0 in car 120 at left: 0 and bottom: 2
+put rectangle 187 with rotate: 0 in car 106 at left: 6 and bottom: 1
+put rectangle 188 with rotate: 1 in car 29 at left: 3 and bottom: 8
+put rectangle 189 with rotate: 1 in car 121 at left: 0 and bottom: 5
+put rectangle 190 with rotate: 0 in car 120 at left: 0 and bottom: 4
+put rectangle 191 with rotate: 0 in car 120 at left: 0 and bottom: 9
+put rectangle 192 with rotate: 1 in car 40 at left: 0 and bottom: 5
+put rectangle 193 with rotate: 0 in car 120 at left: 2 and bottom: 11
+put rectangle 194 with rotate: 0 in car 120 at left: 6 and bottom: 13
+put rectangle 195 with rotate: 0 in car 120 at left: 1 and bottom: 4
+put rectangle 196 with rotate: 0 in car 120 at left: 11 and bottom: 0
+put rectangle 197 with rotate: 1 in car 24 at left: 4 and bottom: 8
+put rectangle 198 with rotate: 1 in car 24 at left: 0 and bottom: 5
+put rectangle 199 with rotate: 0 in car 113 at left: 2 and bottom: 0
+put rectangle 200 with rotate: 0 in car 56 at left: 0 and bottom: 5
+put rectangle 201 with rotate: 1 in car 119 at left: 0 and bottom: 14
+put rectangle 202 with rotate: 1 in car 103 at left: 4 and bottom: 17
+put rectangle 203 with rotate: 0 in car 51 at left: 3 and bottom: 1
+put rectangle 204 with rotate: 0 in car 23 at left: 3 and bottom: 1
+put rectangle 205 with rotate: 1 in car 120 at left: 1 and bottom: 6
+put rectangle 206 with rotate: 1 in car 120 at left: 10 and bottom: 1
+put rectangle 207 with rotate: 1 in car 120 at left: 4 and bottom: 5
+put rectangle 208 with rotate: 0 in car 120 at left: 0 and bottom: 0
+put rectangle 209 with rotate: 0 in car 50 at left: 0 and bottom: 3
+put rectangle 210 with rotate: 0 in car 120 at left: 9 and bottom: 7
+put rectangle 211 with rotate: 1 in car 120 at left: 8 and bottom: 7
+put rectangle 212 with rotate: 1 in car 25 at left: 5 and bottom: 1
+put rectangle 213 with rotate: 1 in car 109 at left: 4 and bottom: 10
+put rectangle 214 with rotate: 1 in car 40 at left: 2 and bottom: 6
+put rectangle 215 with rotate: 0 in car 22 at left: 0 and bottom: 2
+put rectangle 216 with rotate: 1 in car 120 at left: 6 and bottom: 11
+put rectangle 217 with rotate: 1 in car 120 at left: 1 and bottom: 0
+put rectangle 218 with rotate: 0 in car 120 at left: 1 and bottom: 10
+put rectangle 219 with rotate: 1 in car 120 at left: 9 and bottom: 14
+put rectangle 220 with rotate: 1 in car 24 at left: 0 and bottom: 0
+put rectangle 221 with rotate: 1 in car 120 at left: 4 and bottom: 9
+put rectangle 222 with rotate: 1 in car 120 at left: 11 and bottom: 5
+put rectangle 223 with rotate: 0 in car 26 at left: 0 and bottom: 1
+put rectangle 224 with rotate: 0 in car 29 at left: 0 and bottom: 0
+put rectangle 225 with rotate: 1 in car 29 at left: 0 and bottom: 2
+put rectangle 226 with rotate: 1 in car 22 at left: 2 and bottom: 0
+put rectangle 227 with rotate: 0 in car 30 at left: 0 and bottom: 4
+put rectangle 228 with rotate: 0 in car 29 at left: 6 and bottom: 5
+put rectangle 229 with rotate: 1 in car 31 at left: 0 and bottom: 6
+put rectangle 230 with rotate: 1 in car 23 at left: 1 and bottom: 2
+put rectangle 231 with rotate: 0 in car 121 at left: 12 and bottom: 4
+put rectangle 232 with rotate: 0 in car 101 at left: 0 and bottom: 0
+put rectangle 233 with rotate: 0 in car 31 at left: 0 and bottom: 1
+put rectangle 234 with rotate: 0 in car 102 at left: 1 and bottom: 3
+put rectangle 235 with rotate: 1 in car 40 at left: 0 and bottom: 0
+put rectangle 236 with rotate: 1 in car 31 at left: 5 and bottom: 6
+put rectangle 237 with rotate: 1 in car 31 at left: 5 and bottom: 4
+put rectangle 238 with rotate: 1 in car 25 at left: 1 and bottom: 0
+put rectangle 239 with rotate: 1 in car 31 at left: 2 and bottom: 1
+put rectangle 240 with rotate: 1 in car 32 at left: 0 and bottom: 3
+put rectangle 241 with rotate: 0 in car 33 at left: 2 and bottom: 6
+put rectangle 242 with rotate: 1 in car 32 at left: 1 and bottom: 6
+put rectangle 243 with rotate: 1 in car 32 at left: 2 and bottom: 0
+put rectangle 244 with rotate: 1 in car 25 at left: 5 and bottom: 3
+put rectangle 245 with rotate: 0 in car 25 at left: 5 and bottom: 0
+put rectangle 246 with rotate: 1 in car 32 at left: 0 and bottom: 1
+put rectangle 247 with rotate: 0 in car 33 at left: 5 and bottom: 4
+put rectangle 248 with rotate: 0 in car 34 at left: 2 and bottom: 4
+put rectangle 249 with rotate: 1 in car 104 at left: 4 and bottom: 2
+put rectangle 250 with rotate: 1 in car 42 at left: 5 and bottom: 0
+put rectangle 251 with rotate: 1 in car 42 at left: 6 and bottom: 0
+put rectangle 252 with rotate: 1 in car 110 at left: 20 and bottom: 4
+put rectangle 253 with rotate: 0 in car 42 at left: 6 and bottom: 4
+put rectangle 254 with rotate: 0 in car 42 at left: 0 and bottom: 0
+put rectangle 255 with rotate: 0 in car 102 at left: 0 and bottom: 6
+put rectangle 256 with rotate: 1 in car 59 at left: 0 and bottom: 3
+put rectangle 257 with rotate: 1 in car 42 at left: 0 and bottom: 3
+put rectangle 258 with rotate: 0 in car 48 at left: 4 and bottom: 1
+put rectangle 259 with rotate: 1 in car 47 at left: 1 and bottom: 3
+put rectangle 260 with rotate: 0 in car 45 at left: 2 and bottom: 1
+put rectangle 261 with rotate: 0 in car 105 at left: 3 and bottom: 1
+put rectangle 262 with rotate: 1 in car 46 at left: 2 and bottom: 2
+put rectangle 263 with rotate: 1 in car 49 at left: 2 and bottom: 2
+put rectangle 264 with rotate: 1 in car 52 at left: 6 and bottom: 1
+put rectangle 265 with rotate: 1 in car 35 at left: 1 and bottom: 5
+put rectangle 266 with rotate: 1 in car 52 at left: 5 and bottom: 1
+put rectangle 267 with rotate: 0 in car 50 at left: 4 and bottom: 4
+put rectangle 268 with rotate: 1 in car 49 at left: 4 and bottom: 0
+put rectangle 269 with rotate: 0 in car 50 at left: 0 and bottom: 0
+put rectangle 270 with rotate: 1 in car 111 at left: 3 and bottom: 3
+put rectangle 271 with rotate: 1 in car 111 at left: 8 and bottom: 7
+put rectangle 272 with rotate: 1 in car 52 at left: 0 and bottom: 4
+put rectangle 273 with rotate: 0 in car 111 at left: 12 and bottom: 5
+put rectangle 274 with rotate: 1 in car 54 at left: 0 and bottom: 0
+put rectangle 275 with rotate: 1 in car 54 at left: 2 and bottom: 4
+put rectangle 276 with rotate: 0 in car 54 at left: 0 and bottom: 2
+put rectangle 277 with rotate: 0 in car 50 at left: 2 and bottom: 4
+put rectangle 278 with rotate: 0 in car 111 at left: 12 and bottom: 7
+put rectangle 279 with rotate: 0 in car 50 at left: 2 and bottom: 1
+put rectangle 280 with rotate: 0 in car 106 at left: 2 and bottom: 0
+put rectangle 281 with rotate: 0 in car 107 at left: 0 and bottom: 0
+put rectangle 282 with rotate: 1 in car 109 at left: 8 and bottom: 17
+put rectangle 283 with rotate: 0 in car 40 at left: 3 and bottom: 1
+put rectangle 284 with rotate: 1 in car 52 at left: 2 and bottom: 6
+put rectangle 285 with rotate: 0 in car 111 at left: 8 and bottom: 3
+put rectangle 286 with rotate: 1 in car 109 at left: 0 and bottom: 10
+put rectangle 287 with rotate: 0 in car 50 at left: 4 and bottom: 0
+put rectangle 288 with rotate: 0 in car 103 at left: 6 and bottom: 0
+put rectangle 289 with rotate: 1 in car 109 at left: 14 and bottom: 5
+put rectangle 290 with rotate: 1 in car 103 at left: 4 and bottom: 2
+put rectangle 291 with rotate: 0 in car 63 at left: 1 and bottom: 1
+put rectangle 292 with rotate: 1 in car 103 at left: 0 and bottom: 13
+put rectangle 293 with rotate: 1 in car 103 at left: 13 and bottom: 16
+put rectangle 294 with rotate: 1 in car 103 at left: 0 and bottom: 14
+put rectangle 295 with rotate: 1 in car 107 at left: 1 and bottom: 3
+put rectangle 296 with rotate: 0 in car 109 at left: 1 and bottom: 0
+put rectangle 297 with rotate: 0 in car 109 at left: 13 and bottom: 1
+put rectangle 298 with rotate: 1 in car 103 at left: 7 and bottom: 7
+put rectangle 299 with rotate: 0 in car 103 at left: 15 and bottom: 10
+put rectangle 300 with rotate: 1 in car 103 at left: 12 and bottom: 14
+put rectangle 301 with rotate: 1 in car 103 at left: 12 and bottom: 4
+put rectangle 302 with rotate: 1 in car 103 at left: 7 and bottom: 13
+put rectangle 303 with rotate: 0 in car 109 at left: 9 and bottom: 7
+put rectangle 304 with rotate: 1 in car 103 at left: 12 and bottom: 10
+put rectangle 305 with rotate: 1 in car 107 at left: 3 and bottom: 0
+put rectangle 306 with rotate: 1 in car 110 at left: 12 and bottom: 12
+put rectangle 307 with rotate: 1 in car 66 at left: 2 and bottom: 7
+put rectangle 308 with rotate: 0 in car 51 at left: 9 and bottom: 4
+put rectangle 309 with rotate: 1 in car 107 at left: 2 and bottom: 5
+put rectangle 310 with rotate: 0 in car 103 at left: 5 and bottom: 15
+put rectangle 311 with rotate: 0 in car 103 at left: 18 and bottom: 0
+put rectangle 312 with rotate: 1 in car 103 at left: 17 and bottom: 4
+put rectangle 313 with rotate: 1 in car 120 at left: 0 and bottom: 14
+put rectangle 314 with rotate: 0 in car 103 at left: 5 and bottom: 13
+put rectangle 315 with rotate: 1 in car 51 at left: 10 and bottom: 3
+put rectangle 316 with rotate: 1 in car 103 at left: 17 and bottom: 9
+put rectangle 317 with rotate: 1 in car 103 at left: 12 and bottom: 5
+put rectangle 318 with rotate: 0 in car 103 at left: 12 and bottom: 1
+put rectangle 319 with rotate: 1 in car 110 at left: 9 and bottom: 11
+put rectangle 320 with rotate: 1 in car 110 at left: 0 and bottom: 6
+put rectangle 321 with rotate: 1 in car 122 at left: 13 and bottom: 4
+put rectangle 322 with rotate: 1 in car 110 at left: 5 and bottom: 7
+put rectangle 323 with rotate: 0 in car 104 at left: 0 and bottom: 4
+put rectangle 324 with rotate: 1 in car 110 at left: 12 and bottom: 5
+put rectangle 325 with rotate: 1 in car 110 at left: 9 and bottom: 12
+put rectangle 326 with rotate: 1 in car 110 at left: 1 and bottom: 10
+put rectangle 327 with rotate: 0 in car 110 at left: 14 and bottom: 11
+put rectangle 328 with rotate: 1 in car 109 at left: 18 and bottom: 3
+put rectangle 329 with rotate: 1 in car 103 at left: 13 and bottom: 10
+put rectangle 330 with rotate: 0 in car 109 at left: 15 and bottom: 9
+put rectangle 331 with rotate: 0 in car 110 at left: 16 and bottom: 12
+put rectangle 332 with rotate: 1 in car 110 at left: 5 and bottom: 10
+put rectangle 333 with rotate: 0 in car 110 at left: 17 and bottom: 10
+put rectangle 334 with rotate: 0 in car 110 at left: 5 and bottom: 1
+put rectangle 335 with rotate: 1 in car 110 at left: 18 and bottom: 5
+put rectangle 336 with rotate: 0 in car 110 at left: 6 and bottom: 8
+put rectangle 337 with rotate: 0 in car 109 at left: 12 and bottom: 15
+put rectangle 338 with rotate: 1 in car 110 at left: 9 and bottom: 10
+put rectangle 339 with rotate: 0 in car 109 at left: 16 and bottom: 10
+put rectangle 340 with rotate: 1 in car 110 at left: 15 and bottom: 7
+put rectangle 341 with rotate: 0 in car 111 at left: 14 and bottom: 2
+put rectangle 342 with rotate: 1 in car 110 at left: 0 and bottom: 0
+put rectangle 343 with rotate: 1 in car 110 at left: 16 and bottom: 5
+put rectangle 344 with rotate: 0 in car 56 at left: 12 and bottom: 10
+put rectangle 345 with rotate: 0 in car 110 at left: 15 and bottom: 11
+put rectangle 346 with rotate: 1 in car 110 at left: 17 and bottom: 1
+put rectangle 347 with rotate: 0 in car 110 at left: 10 and bottom: 8
+put rectangle 348 with rotate: 1 in car 122 at left: 3 and bottom: 8
+put rectangle 349 with rotate: 1 in car 110 at left: 15 and bottom: 5
+put rectangle 350 with rotate: 1 in car 110 at left: 16 and bottom: 6
+Min_cost: 36450.0
+time_limit: 120.0
+cars: 122
+rects: 350
+time: 167.71

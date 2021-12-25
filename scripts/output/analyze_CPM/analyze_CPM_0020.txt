@@ -1,20 +1,6 @@
-rectangle1 car8 1, 1 2
-rectangle2 car8 0, 1 0
-rectangle3 car8 1, 4 7
-rectangle4 car8 0, 18 10
-rectangle5 car8 0, 12 10
-rectangle6 car8 1, 20 0
-rectangle7 car8 1, 13 5
-rectangle8 car8 1, 0 6
-rectangle9 car8 0, 8 5
-rectangle10 car8 0, 18 5
-rectangle11 car8 0, 13 6
-rectangle12 car8 1, 0 14
-rectangle13 car8 1, 4 2
-rectangle14 car8 1, 8 2
-rectangle15 car8 0, 5 10
-rectangle16 car8 0, 0 5
-rectangle17 car8 0, 7 0
-rectangle18 car8 0, 8 6
-rectangle19 car8 1, 0 0
-rectangle20 car8 0, 5 7
+400.0
+120.0
+9
+20
+120.31
+1

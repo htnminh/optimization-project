@@ -1,4 +1,5 @@
 from ortools.linear_solver.pywraplp import Solver
+import sys
 
 
 def input_data(file_path):
@@ -18,7 +19,11 @@ def input_data(file_path):
 
 
 if __name__ == "__main__":
-    n_rectangles, n_cars, rectangles, cars = input_data(r"files\generated_data\0020.txt")
+    try:
+        file_path = sys.argv[1]
+    except IndexError:
+        file_path = 'files/generated_data/0015.txt'
+    n_rectangles, n_cars, rectangles, cars = input_data(file_path)
     max_width, max_height = (
         max(cars, key=lambda x: x[0])[0],
         max(cars, key=lambda x: x[1])[1],
@@ -153,7 +158,7 @@ if __name__ == "__main__":
     cost = sum(is_use_car[j] * cars[j][2] for j in range(n_cars))
     Solver.Minimize(solver, cost)
 
-    # solver.set_time_limit(10000)
+    solver.set_time_limit(300 * 1000)
 
     # Creates solver and solve the model
     status = Solver.Solve(solver)
@@ -164,3 +169,4 @@ if __name__ == "__main__":
             print(
                 f"put rectangle {i + 1} with rotation {rotate[i].solution_value()} in car {car_index[i].solution_value() + 1} at {left[i].solution_value()} {bottom[i].solution_value()} -> {right[i].solution_value()} {top[i].solution_value()}"
             )
+        print("car_used:", len(set([car_index[i].solution_value() for i in range(n_rectangles)])))

@@ -1,0 +1,23 @@
+Min cost: 400.0
+put rectangle 1 with rotation 0.0 in car 8.0 at 9.0 1.0 -> 12.0 4.0
+put rectangle 2 with rotation 0.0 in car 8.0 at 15.0 12.0 -> 20.0 14.0
+put rectangle 3 with rotation 0.0 in car 8.0 at 15.0 8.0 -> 20.0 9.0
+put rectangle 4 with rotation 1.0 in car 8.0 at 0.0 17.0 -> 4.0 19.0
+put rectangle 5 with rotation 0.0 in car 8.0 at 0.0 9.0 -> 1.0 11.0
+put rectangle 6 with rotation 0.0 in car 8.0 at 13.0 18.0 -> 15.0 19.0
+put rectangle 7 with rotation 1.0 in car 8.0 at 13.0 5.0 -> 18.0 6.0
+put rectangle 8 with rotation 1.0 in car 8.0 at 9.0 17.0 -> 12.0 18.0
+put rectangle 9 with rotation 1.0 in car 8.0 at 20.0 0.0 -> 21.0 4.0
+put rectangle 10 with rotation 1.0 in car 8.0 at 5.0 9.0 -> 9.0 12.0
+put rectangle 11 with rotation 0.0 in car 8.0 at 15.0 0.0 -> 20.0 4.0
+put rectangle 12 with rotation 1.0 in car 8.0 at 6.0 4.0 -> 10.0 9.0
+put rectangle 13 with rotation 0.0 in car 8.0 at 0.0 6.0 -> 5.0 9.0
+put rectangle 14 with rotation 1.0 in car 8.0 at 0.0 14.0 -> 4.0 17.0
+put rectangle 15 with rotation 0.0 in car 8.0 at 10.0 4.0 -> 12.0 8.0
+put rectangle 16 with rotation 0.0 in car 8.0 at 1.0 0.0 -> 5.0 1.0
+put rectangle 17 with rotation 0.0 in car 8.0 at 20.0 19.0 -> 21.0 22.0
+put rectangle 18 with rotation 0.0 in car 8.0 at 1.0 1.0 -> 6.0 5.0
+put rectangle 19 with rotation 1.0 in car 8.0 at 12.0 9.0 -> 13.0 14.0
+put rectangle 20 with rotation 0.0 in car 8.0 at 12.0 19.0 -> 15.0 22.0
+car_used: 1
+time: 300.18
