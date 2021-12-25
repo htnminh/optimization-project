@@ -1,2 +1,1 @@
-Command terminated by signal 2
-time: 0.02
+time: 302.51
