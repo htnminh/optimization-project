@@ -65,7 +65,9 @@ then
 		CAR=$(cat $filepath | head -n1 | awk '{print $2}');
 		CST=$(cat $file | head -n1 | awk '{print $3}');
 		TME=$(cat $file | tail -n1 | awk '{print $2}');
-		CUS=$(cat $file | tail -n2 | head -n1 | awk '{print $2}')
+		if [ ! -z "$CST" ]; then
+			CUS=$(cat $file | tail -n2 | head -n1 | awk '{print $2}');
+		fi
 		echo $PKG >  $analyze; # n pkgs
 		echo $CAR >> $analyze; # n cars
 		echo $CST >> $analyze; # min cost

@@ -1,2 +1,1 @@
-Command exited with non-zero status 1
-time: 0.02
+time: 301.05
