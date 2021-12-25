@@ -87,11 +87,13 @@ plt.savefig('files/_analytical_figures/df_area_01 running time')
 df_area_01.plot(x='rect_count', y='time_exceeded_count', kind='scatter')
 plt.savefig('files/_analytical_figures/df_area_01 time_exceeded_count')
 
+# heuristic choosen
 df_area_1.sort_values(by='rect_count', inplace=True)
 df_area_1.plot(x='rect_count', y='total cost', kind='scatter')
 plt.savefig('files/_analytical_figures/df_area_1 total cost')
 df_area_1.plot(x='rect_count', y='running time', kind='scatter')
 plt.savefig('files/_analytical_figures/df_area_1 running time')
+# plt.show()
 
 df_maxside_01.sort_values(by='rect_count', inplace=True)
 df_maxside_01.plot(x='rect_count', y='total cost', kind='scatter')
