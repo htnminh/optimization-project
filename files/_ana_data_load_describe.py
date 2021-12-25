@@ -61,9 +61,23 @@ with open(output_file_path, 'a') as fo:
 df_CPM_dropped_na = df_CPM.dropna(how='any').copy()
 with open(output_file_path, 'a') as fo:
     print('-' * char_count, file=fo)
-    print('ANALYTICAL DATA (DROPPED N/A) OF cp_model.py WITH time_limit = 120 '.center(111), file=fo)
+    print('ANALYTICAL DATA (DROPPED N/A) OF cp_model.py WITH time_limit = 120'.center(111), file=fo)
     print('-' * char_count, file=fo)
     print(df_CPM_dropped_na.describe(), file=fo)
+
+df_MIP = pd.read_csv(r'scripts\output\_ana_MIP\analyze_MIP.csv', header=0)
+with open(output_file_path, 'a') as fo:
+    print('-' * char_count, file=fo)
+    print('ANALYTICAL DATA OF mip_model.py WITH time_limit = 300'.center(111), file=fo)
+    print('-' * char_count, file=fo)
+    print(df_MIP.describe(), file=fo)
+
+df_MIP_dropped_na = df_MIP.dropna(how='any').copy()
+with open(output_file_path, 'a') as fo:
+    print('-' * char_count, file=fo)
+    print('ANALYTICAL DATA (DROPPED N/A) OF mip_model.py WITH time_limit = 300'.center(111), file=fo)
+    print('-' * char_count, file=fo)
+    print(df_MIP_dropped_na.describe(), file=fo)
 
 print('Described data saved to', output_file_path)
 
@@ -114,5 +128,11 @@ df_CPM_dropped_na.plot(x='n_rect', y='cost', kind='scatter')
 plt.savefig('files/_analytical_figures/df_CPM cost')
 df_CPM_dropped_na.plot(x='n_rect', y='time_running', kind='scatter')
 plt.savefig('files/_analytical_figures/df_CPM time_running')
+
+df_MIP_dropped_na.sort_values(by='n_rect', inplace=True)
+df_MIP_dropped_na.plot(x='n_rect', y='cost', kind='scatter')
+plt.savefig('files/_analytical_figures/df_MIP cost')
+df_MIP_dropped_na.plot(x='n_rect', y='time_running', kind='scatter')
+plt.savefig('files/_analytical_figures/df_MIP time_running')
 
 print('Figures saved to files/_analytical_figures/')
