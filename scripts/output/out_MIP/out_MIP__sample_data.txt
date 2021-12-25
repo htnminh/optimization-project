@@ -7,4 +7,4 @@ put rectangle 5 with rotation 0.0 in car 2.0 at 3.0 1.0 -> 4.0 5.0
 put rectangle 6 with rotation 0.0 in car 2.0 at 0.0 1.0 -> 3.0 3.0
 put rectangle 7 with rotation 0.0 in car 2.0 at 0.0 0.0 -> 4.0 1.0
 car_used: 2
-time: 2.61
+time: 2.51
