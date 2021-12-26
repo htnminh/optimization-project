@@ -1,8 +1,8 @@
 # General 2D Bin Packing Problem
 A Mini-project for Fundamental of Optimization course: The 2D Bin Packing Problem using Constraint Programming, Mix Integer Programming, and a heuristic. 
 
-Algorithms' performance analyzed. Please, take a quick look at:
-- The report (`REPORT.pdf`)
+Please, take a quick look at:
+- The report (`REPORT.pdf`) (many things in detail is written here)
 - The presentation (`presentation\General 2D Bin Packing Problem.pdf`)
 
 **Note**:
