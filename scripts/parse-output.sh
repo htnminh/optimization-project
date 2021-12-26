@@ -33,7 +33,7 @@ then
 	f=$(cd files/generated_data/; find . -name "*.txt" | awk '{print substr($0, 3)}' | sort )
 
 	# CSV stuff
-	csvdir=scripts/output/csv_$mode
+	csvdir=scripts/output/_analyze_$mode
 	csvfile=$csvdir/analyze_$mode.csv
 	mkdir -p $csvdir	
 	echo "n_rect,n_car,cost,n_car_used,time_limit,time_running" > $csvfile
@@ -87,7 +87,7 @@ then
 	
 	# CSV stuff
 	csvdir=scripts/output/$mode
-	csvfile=$csvdir/csv_$mode.csv
+	csvfile=$csvdir/analyze_$mode.csv
 	mkdir -p $csvdir	
 	echo "n_rect,n_car,cost,n_car_used,time_limit,time_running" > $csvfile
 
