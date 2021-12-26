@@ -30,7 +30,7 @@ for i in $x; do
 	touch $analyze;
 	
 	# execute CPM & time it
-	/usr/bin/time -f "time: %e" -ao $file python3 drafts/mip_model.py $filepath > $file;
+	/usr/bin/time -f "time: %e" -ao $file python3 files/mip_model.py $filepath > $file;
 	
 done
 
