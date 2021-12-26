@@ -35,4 +35,4 @@ for i in $x; do
 done
 
 # run parser & converter
-bash scripts/script_parse-output.sh MIP
+bash scripts/parse-output.sh MIP

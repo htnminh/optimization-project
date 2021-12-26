@@ -35,4 +35,4 @@ for i in $x; do
 done
 	
 # run parser
-bash scripts/script_parse-output.sh CPM
+bash scripts/parse-output.sh CPM
