@@ -10,8 +10,6 @@ pd.options.display.max_columns = None
 pd.options.display.max_colwidth = None
 pd.options.display.expand_frame_repr = False
 
-# plt.style.use('dark_background')
-
 
 # consts
 output_file_path = 'files/_ana_data_loaded_describe.txt'
@@ -23,7 +21,7 @@ with open('files/_analytical_data/_ana_heuristic_bestfit_area_numpy_0.1.pkl', 'r
     df_area_01 = pkl.load(fi)
     with open(output_file_path, 'w') as fo:
         print('-' * char_count, file=fo)
-        print('ANALYTICAL DATA OF heuristic_bestfit_area_numpy.py WITH GLOBAL_TIME_LIMIT_PER_ITER = 0.1'.center(111), file=fo)
+        print('ANALYTICAL DATA OF heuristic_bestfit_area_numpy.py WITH GLOBAL_TIME_LIMIT_PER_ITER = 0.1'.center(char_count), file=fo)
         print('-' * char_count, file=fo)
         print(df_area_01.describe(), file=fo)
 
@@ -31,7 +29,7 @@ with open('files/_analytical_data/_ana_heuristic_bestfit_area_numpy_1.pkl', 'rb'
     df_area_1 = pkl.load(fi)
     with open(output_file_path, 'a') as fo:
         print('-' * char_count, file=fo)
-        print('ANALYTICAL DATA OF heuristic_bestfit_area_numpy.py WITH GLOBAL_TIME_LIMIT_PER_ITER = 1'.center(111), file=fo)
+        print('ANALYTICAL DATA OF heuristic_bestfit_area_numpy.py WITH GLOBAL_TIME_LIMIT_PER_ITER = 1'.center(char_count), file=fo)
         print('-' * char_count, file=fo)
         print(df_area_1.describe(), file=fo)
 
@@ -39,7 +37,7 @@ with open('files/_analytical_data/_ana_heuristic_bestfit_maxside_numpy_0.1.pkl',
     df_maxside_01 = pkl.load(fi)
     with open(output_file_path, 'a') as fo:
         print('-' * char_count, file=fo)
-        print('ANALYTICAL DATA OF heuristic_bestfit_maxside_numpy.py WITH GLOBAL_TIME_LIMIT_PER_ITER = 0.1'.center(111), file=fo)
+        print('ANALYTICAL DATA OF heuristic_bestfit_maxside_numpy.py WITH GLOBAL_TIME_LIMIT_PER_ITER = 0.1'.center(char_count), file=fo)
         print('-' * char_count, file=fo)
         print(df_maxside_01.describe(), file=fo)
 
@@ -47,35 +45,35 @@ with open('files/_analytical_data/_ana_heuristic_bestfit_maxside_numpy_1.pkl', '
     df_maxside_1 = pkl.load(fi)
     with open(output_file_path, 'a') as fo:
         print('-' * char_count, file=fo)
-        print('ANALYTICAL DATA OF heuristic_bestfit_maxside_numpy.py WITH GLOBAL_TIME_LIMIT_PER_ITER = 1'.center(111), file=fo)
+        print('ANALYTICAL DATA OF heuristic_bestfit_maxside_numpy.py WITH GLOBAL_TIME_LIMIT_PER_ITER = 1'.center(char_count), file=fo)
         print('-' * char_count, file=fo)
         print(df_maxside_1.describe(include='all'), file=fo)
 
 df_CPM = pd.read_csv(r'scripts\output\_ana_CPM\analyze_CPM_L120_final.csv', header=0)
 with open(output_file_path, 'a') as fo:
     print('-' * char_count, file=fo)
-    print('ANALYTICAL DATA OF cp_model.py WITH time_limit = 120'.center(111), file=fo)
+    print('ANALYTICAL DATA OF CP_model.py WITH time_limit = 120'.center(char_count), file=fo)
     print('-' * char_count, file=fo)
     print(df_CPM.describe(), file=fo)
 
 df_CPM_dropped_na = df_CPM.dropna(how='any').copy()
 with open(output_file_path, 'a') as fo:
     print('-' * char_count, file=fo)
-    print('ANALYTICAL DATA (DROPPED N/A) OF cp_model.py WITH time_limit = 120'.center(111), file=fo)
+    print('ANALYTICAL DATA (DROPPED N/A) OF CP_model.py WITH time_limit = 120'.center(char_count), file=fo)
     print('-' * char_count, file=fo)
     print(df_CPM_dropped_na.describe(), file=fo)
 
 df_MIP = pd.read_csv(r'scripts\output\_ana_MIP\analyze_MIP.csv', header=0)
 with open(output_file_path, 'a') as fo:
     print('-' * char_count, file=fo)
-    print('ANALYTICAL DATA OF mip_model.py WITH time_limit = 300'.center(111), file=fo)
+    print('ANALYTICAL DATA OF mip_model.py WITH time_limit = 300'.center(char_count), file=fo)
     print('-' * char_count, file=fo)
     print(df_MIP.describe(), file=fo)
 
 df_MIP_dropped_na = df_MIP.dropna(how='any').copy()
 with open(output_file_path, 'a') as fo:
     print('-' * char_count, file=fo)
-    print('ANALYTICAL DATA (DROPPED N/A) OF mip_model.py WITH time_limit = 300'.center(111), file=fo)
+    print('ANALYTICAL DATA (DROPPED N/A) OF mip_model.py WITH time_limit = 300'.center(char_count), file=fo)
     print('-' * char_count, file=fo)
     print(df_MIP_dropped_na.describe(), file=fo)
 
@@ -136,3 +134,28 @@ df_MIP_dropped_na.plot(x='n_rect', y='time_running', kind='scatter')
 plt.savefig('files/_analytical_figures/df_MIP time_running')
 
 print('Figures saved to files/_analytical_figures/')
+
+
+# full dataframes
+char_count = 50
+
+with open(r'files\_ana_data_loaded_df.txt', 'w') as fo:
+    df_CPM.sort_values(by='n_rect', inplace=True)
+    print('-' * char_count, file=fo)
+    print('ANALYTICAL DATA OF CP_model.py WITH time_limit = 120'.center(char_count), file=fo)
+    print('-' * char_count, file=fo)
+    print(df_CPM, file=fo)
+
+    df_MIP.sort_values(by='n_rect', inplace=True)
+    print('-' * char_count, file=fo)
+    print('ANALYTICAL DATA OF mip_model.py WITH time_limit = 300'.center(char_count), file=fo)
+    print('-' * char_count, file=fo)
+    print(df_MIP, file=fo)
+
+    df_area_1.sort_values(by='rect_count', inplace=True)
+    print('-' * char_count, file=fo)
+    print('ANALYTICAL DATA OF heuristic_bestfit_area_numpy.py WITH GLOBAL_TIME_LIMIT_PER_ITER = 1'.center(char_count), file=fo)
+    print('-' * char_count, file=fo)
+    print(df_area_1, file=fo)
+
+print('Data saved to files/_ana_data_loaded_df.txt')
