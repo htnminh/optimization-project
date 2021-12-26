@@ -1,7 +1,0 @@
-pressed CTRL-C 1 times (5 times for forcing termination)
-pressed CTRL-C 2 times (5 times for forcing termination)
-pressed CTRL-C 3 times (5 times for forcing termination)
-pressed CTRL-C 4 times (5 times for forcing termination)
-pressed CTRL-C 5 times. forcing termination.
-Command exited with non-zero status 1
-time: 155.63

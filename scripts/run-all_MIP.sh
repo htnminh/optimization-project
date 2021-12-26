@@ -1,8 +1,10 @@
 #!/bin/bash
+# please run this from root of source code:
+#
+# ~/optimization-project$ scripts/run-all_MIP.sh
 
 # change dir to root of project
-SCRIPT_PATH=$(dirname $0)
-cd $SCRIPT_PATH/..
+cd $PWD
 
 outdir=scripts/output/out_MIP
 analyzedir=scripts/output/analyze_MIP
@@ -30,8 +32,7 @@ for i in $x; do
 	# execute CPM & time it
 	/usr/bin/time -f "time: %e" -ao $file python3 drafts/mip_model.py $filepath > $file;
 	
-	
 done
 
 # run parser & converter
-bash scripts/script_parse-output.sh MIP 0 0 0;
+bash scripts/script_parse-output.sh MIP

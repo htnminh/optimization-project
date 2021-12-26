@@ -1,7 +1,10 @@
 #!/bin/bash
+# please run this from root of source code:
+#
+# ~/optimization$ scripts/run-all_CPM.sh
 
 # change dir to root of project
-cd $PWD/..
+cd $PWD
 
 outdir=scripts/output/out_CPM
 analyzedir=scripts/output/analyze_CPM
@@ -27,15 +30,9 @@ for i in $x; do
 	touch $analyze;
 	
 	# execute CPM & time it
-	/usr/bin/time -f "time: %e" -ao $file python3 drafts/cp_model.py $filepath > $file;
-	
-	# run parser
-	bash scripts/script_parse-output.sh CPM $file $analyze 1
-	if [ $? -eq -1 ]; 
-	then
-		continue;
-	fi
-done
+	/usr/bin/time -f "time: %e" -ao $file python3 files/CP_model.py $filepath > $file;
 
-# run csv converter
-bash $PWD/script_convert-to-csv.sh CPM
+done
+	
+# run parser
+bash scripts/script_parse-output.sh CPM
