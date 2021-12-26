@@ -1,5 +1,9 @@
 # General 2D Bin Packing Problem
 Mini-project for course Fundamental of Optimization
+
+Report:
+<https://htnminh.notion.site/General-2D-Bin-Packing-Problem-Group-9-Topic-3-5a2ed2f54615408f9969b80617264c34>
+
 <!--
 Description
 
