@@ -1,7 +1,12 @@
 # General 2D Bin Packing Problem
 A Mini-project for Fundamental of Optimization course: The 2D Bin Packing Problem using Constraint Programming, Mix Integer Programming, and a heuristic. 
 
-Algorithms' performance analyzed. For more, please take a quick look at the report `REPORT.pdf`.
+Algorithms' performance analyzed. For more, please take a quick look at the report (`REPORT.pdf`).
+
+**Note**:
+For file paths in scripts,
+- If you run in VS Code, file path should be `files/generated_data/ ...`
+- If you run in terminal or Pycharm, file path should be `generated_data/ ...`
 
 Hyperlinks:
 - GitHub repository: <https://github.com/htnminh/optimization-project>
@@ -40,6 +45,4 @@ Quick introduction about the chapter
 - [Contributing]()
 - [Issue templates]()
 -->
-**Note**: 
-- If you run in VS Code, file path should be files/generated_data/ ...
-- If you run in terminal or Pycharm, file path should be generated_data/ ...
+
